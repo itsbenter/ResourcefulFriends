@@ -12,6 +12,8 @@ There are two variations of Coalclaw. When purchasing from Marnie there is equal
 
 Coalclaws who eat every day mature after 2 nights have passed. A mature and fed Coalclaw will produce Coalclaw Clump every day, if the conditions are met. Once sufficient friendship and happiness is reached, Coalclaw has a chance to produce a Large Coalclaw Clump.
 
+![Coalclaw_Produces](Animals/Coalclaw_Produces.png)
+
 Coalclaw Clump and Large Coalclaw Clump cannot be picked up and instead must be destroyed using pickaxe, giving 5 and 7 mining experience respectively. The number of coal produced when destroying the clump is increased by 50% when player has [Prospector](https://stardewvalleywiki.com/Skills#Mining) profession.
 
 | Resource | Min | Max | Avg |
