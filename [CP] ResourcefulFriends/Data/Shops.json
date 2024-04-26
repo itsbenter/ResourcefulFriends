@@ -1,0 +1,21 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "FishShop",
+                "Items"
+            ],
+            "Entries": {
+                "ItsBenter.ResourcefulFriends.Jellomone": {
+                    "Id": "ItsBenter.ResourcefulFriends.Jellomone",
+                    "Condition": "{{JellomoneUnlockStatus}}",
+                    "ItemId": "(O)ItsBenter.ResourcefulFriends.Jellomone",
+                    "Price": "1100"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+   "$schema": "https://smapi.io/schemas/manifest.json",
+   "Name": "Resourceful Friends",
+   "Author": "ItsBenter",
+   "Version": "1.0.0",
+   "Description": "Adds five new farm animals.",
+   "UniqueID": "ItsBenter.ResourcefulFriends.CP",
+   "MinimumApiVersion": "4.0.0",
+   "UpdateKeys": [
+      "Nexus:23227"
+   ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   },
+   "Dependencies": [
+      /*{
+         "UniqueID": "spacechase0.SpaceCore",
+         "IsRequired": false
+      },*/
+      {
+         "UniqueID": "mistyspring.ItemExtensions",
+         "IsRequired": true
+      }
+   ]
+}

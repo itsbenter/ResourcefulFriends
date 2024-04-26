@@ -1,0 +1,12 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/AquariumFish",
+            "Entries": {
+                "ItsBenter.ResourcefulFriends.Jellomone": "0/static/////Mods\\ItsBenter.ResourcefulFriends\\TileSheets\\AquariumFish"
+            }
+        }
+    ]
+}

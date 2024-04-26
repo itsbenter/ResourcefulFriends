@@ -1,0 +1,1051 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Mods/mistyspring.ItemExtensions/Resources",
+            "Entries": {
+                //CoalclawClump
+                "ItsBenter.ResourcefulFriends.CoalclawClump": {
+                    "DisplayName": "{{i18n:CoalclawClump_DisplayName}}",
+                    "Description": "{{i18n:CoalclawClump_Description}}",
+                    "Texture": "Mods\\ItsBenter.ResourcefulFriends\\TileSheets\\Objects",
+                    "SpriteIndex": 0,
+                    "Width": 1,
+                    "Height": 1,
+                    "Health": 1, //every hit removes (UpgradeLevel + 1)*0.75  , e.g iridium would reduce 4HP
+                    "Sound": "hammer",
+                    "BreakingSound": "stoneCrack",
+                    "Debris": "stone #261d19",
+                    "ItemDropped": "(O)382", //Coal
+                    "Tool": "Pickaxe",
+                    "MinToolLevel": 0,
+                    "MinDrops": 0,
+                    "MaxDrops": 0,
+                    "Shake": true,
+                    "Exp": 5,
+                    "Skill": "mining",
+                    "ContextTags": [
+                        "color_black",
+                        "itsbenter_coalclawclump",
+                        "placeable"
+                    ],
+                    "ExtraItems": [
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.CoalclawClump",
+                            "ItemId": "(O)382",
+                            "MinStack": 4,
+                            "MaxStack": 6,
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.MolecatNode_MinerProfession",
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 21", //Prospector
+                                    "Modification": "Multiply",
+                                    "Amount": 1.5,
+                                }
+                            ],
+                        },
+                    ],
+                },
+                "ItsBenter.ResourcefulFriends.LargeCoalclawClump": {
+                    "DisplayName": "{{i18n:LargeCoalclawClump_DisplayName}}",
+                    "Description": "{{i18n:LargeCoalclawClump_Description}}",
+                    "Texture": "Mods\\ItsBenter.ResourcefulFriends\\TileSheets\\Objects",
+                    "SpriteIndex": 1,
+                    "Width": 1,
+                    "Height": 1,
+                    "Health": 4, //every hit removes (UpgradeLevel + 1)*0.75  , e.g iridium would reduce 4HP
+                    "Sound": "hammer",
+                    "BreakingSound": "stoneCrack",
+                    "Debris": "stone #261d19", //debris shown on breaking. can be: stone, wood, coins, bigstone. you can specify a color
+                    "Tool": "Pickaxe",
+                    "MinToolLevel": 0,
+                    "Shake": true,
+                    "Exp": 7,
+                    "Skill": "mining",
+                    "ContextTags": [
+                        "color_black",
+                        "itsbenter_coalclawclump",
+                        "placeable"
+                    ],
+                    "ExtraItems": [
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.CoalclawClump",
+                            "Quality": 0,
+                            "ItemId": "(O)382", //Coal
+                            "MinStack": 7,
+                            "MaxStack": 9,
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.MolecatNode_MinerProfession",
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 21", //Prospector
+                                    "Modification": "Multiply",
+                                    "Amount": 1.5,
+                                }
+                            ],
+                        },
+                    ],
+                },
+                //TimberbarkPile
+                "ItsBenter.ResourcefulFriends.TimberbarkPile": {
+                    "DisplayName": "{{i18n:TimberbarkPile_DisplayName}}",
+                    "Description": "{{i18n:TimberbarkPile_Description}}",
+                    "SpriteIndex": 2,
+                    "Texture": "Mods\\ItsBenter.ResourcefulFriends\\TileSheets\\Objects",
+                    "Health": 2, //every hit removes (UpgradeLevel + 1)*0.75  , e.g iridium would reduce 4HP
+                    "Width": 1,
+                    "Height": 1,
+                    "Sound": "axe",
+                    "BreakingSound": null,
+                    "ItemDropped": "(O)92", //Sap
+                    "Tool": "Axe",
+                    "MinToolLevel": 0,
+                    "MinDrops": 5,
+                    "MaxDrops": 5,
+                    "ExtraItems": [
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_Wood",
+                            "ItemId": "(O)388", //Wood
+                            "MinStack": 12,
+                            "MaxStack": 16,
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_Forester",
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 12", //Forester
+                                    "Modification": "Multiply",
+                                    "Amount": 1.25,
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_WoodySecret",
+                                    "Condition": "PLAYER_STAT Current Book_Woodcutting 1", //Woody Secret
+                                    "Chance": 0.05,
+                                    "Modification": "Multiply",
+                                    "Amount": 2,
+                                },
+                            ]
+                        },
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_Hardwood",
+                            "ItemId": "(O)709", //Hardwood
+                            "MinStack": 0,
+                            "MaxStack": 0,
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_Lumberjack",
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 14", //Lumberjack
+                                    "Modification": "Add",
+                                    "Amount": 1,
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_Forester",
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 12", //Forester
+                                    "Modification": "Multiply",
+                                    "Amount": 1.25,
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_WoodySecret",
+                                    "Condition": "PLAYER_STAT Current Book_Woodcutting 1", //Lumberjack
+                                    "Chance": 0.05,
+                                    "Modification": "Multiply",
+                                    "Amount": 2,
+                                },
+                            ],
+                        },
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.LargeTimberbarkPile_Moss",
+                            "ItemId": "Moss",
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                        }
+                    ],
+                    "SecretNotes": false,
+                    "Exp": 5,
+                    "Skill": "forage",
+                    "CountTowards": "Stumps",
+                    "Debris": "wood",
+                    "ContextTags": [
+                        "color_brown",
+                        "itsbenter_timberbarkpile",
+                        "placeable"
+                    ],
+                },
+                "ItsBenter.ResourcefulFriends.LargeTimberbarkPile": {
+                    "DisplayName": "{{i18n:LargeTimberbarkPile_DisplayName}}",
+                    "Description": "{{i18n:LargeTimberbarkPile_Description}}",
+                    "SpriteIndex": 3,
+                    "Texture": "Mods\\ItsBenter.ResourcefulFriends\\TileSheets\\Objects",
+                    "Health": 4, //every hit removes (UpgradeLevel + 1)*0.75  , e.g iridium would reduce 4HP
+                    "Width": 1,
+                    "Height": 1,
+                    "Sound": "axe",
+                    "BreakingSound": null,
+                    "ItemDropped": "(O)92", //Sap
+                    "Tool": "Axe",
+                    "MinToolLevel": 0,
+                    "MinDrops": 6,
+                    "MaxDrops": 8,
+                    "ExtraItems": [
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.LargeTimberbarkPile_Wood",
+                            "ItemId": "(O)388", //Wood
+                            "MinStack": 18,
+                            "MaxStack": 24,
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_Forester",
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 12", //Forester
+                                    "Modification": "Multiply",
+                                    "Amount": 1.25,
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_WoodySecret",
+                                    "Condition": "PLAYER_STAT Current Book_Woodcutting 1", //Lumberjack
+                                    "Chance": 0.05,
+                                    "Modification": "Multiply",
+                                    "Amount": 2,
+                                },
+                            ]
+                        },
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.LargeTimberbarkPile_Hardwood",
+                            "ItemId": "(O)709", //Hardwood
+                            "MinStack": 2,
+                            "MaxStack": 2,
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.LargeTimberbarkPile_Lumberjack",
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 14", //Lumberjack
+                                    "Modification": "Add",
+                                    "Amount": 1,
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_Forester",
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 12", //Forester
+                                    "Modification": "Multiply",
+                                    "Amount": 1.25,
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.LargeTimberbarkPile_WoodySecret",
+                                    "Condition": "PLAYER_STAT Current Book_Woodcutting 1", //Lumberjack
+                                    "Chance": 0.05,
+                                    "Modification": "Multiply",
+                                    "Amount": 2,
+                                },
+                            ],
+                        },
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.LargeTimberbarkPile_Moss",
+                            "ItemId": "Moss",
+                            "MinStack": 3,
+                            "MaxStack": 5,
+                        }
+                    ],
+                    "SecretNotes": false,
+                    "Exp": 5,
+                    "Skill": "forage",
+                    "CountTowards": "Stumps",
+                    "Debris": "wood",
+                    "ContextTags": [
+                        "color_brown",
+                        "itsbenter_timberbarkpile",
+                        "placeable"
+                    ],
+                },
+                //ForagePatch
+                "ItsBenter.ResourcefulFriends.SpringForagePatch": {
+                    "DisplayName": "{{i18n:SpringForagePatch_DisplayName}}",
+                    "Description": "{{i18n:SpringForagePatch_Description}}",
+                    "SpriteIndex": 4,
+                    "Texture": "Mods\\ItsBenter.ResourcefulFriends\\TileSheets\\Objects",
+                    "Health": 1, //every hit removes (UpgradeLevel + 1)*0.75  , e.g iridium would reduce 4HP
+                    "Width": 1,
+                    "Height": 1,
+                    "Sound": "axe",
+                    "ItemDropped": "(O)770", //Mixed seeds
+                    "MinDrops": 0, //min to drop
+                    "MaxDrops": 2, //max to drop
+                    "BreakingSound": "cut",
+                    "Tool": "AnyExceptWateringCan",
+                    "MinToolLevel": 0,
+                    "ExtraItems": [
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.SpringForagePatch_Common",
+                            "Quality": 0,
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_spring_common",
+                            "MinStack": 2,
+                            "MaxStack": 3,
+                            "MinItems": 2,
+                            "MaxItems": 2,
+                            "QualityModifiers": [
+                                //Need to test level 15 quality will it give gold or not
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
+                                    "Modification": "Set",
+                                    "Amount": 1,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.12\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.18\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.28\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.32\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.36\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.39\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.42\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.45\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.46\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.48\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.49\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.50\" \"PLAYER_FORAGING_LEVEL Current 15\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GoldQuality",
+                                    "Modification": "Set",
+                                    "Amount": 2,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.03\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.10\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.13\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.17\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.20\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.27\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.30\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.33\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.37\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.40\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.43\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.47\" \"PLAYER_FORAGING_LEVEL Current 15, RANDOM 0.50\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_IridiumQuality",
+                                    "Modification": "Set",
+                                    "Amount": 4,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 16"
+                                },
+                            ],
+                            "QualityModifierMode": "Maximum",
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GathererProfession",
+                                    "Chance": 0.2,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 13",
+                                    "Modification": "Multiply",
+                                    "Amount": 2,
+                                },
+                            ],
+                        },
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.SpringForagePatch_Uncommon",
+                            "Quality": 0,
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "Condition": "RANDOM 0.75",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_spring_uncommon",
+                            "MaxStack": 1,
+                            "MaxItems": 1,
+                            "QualityModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
+                                    "Modification": "Set",
+                                    "Amount": 1,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.12\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.18\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.28\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.32\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.36\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.39\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.42\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.45\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.46\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.48\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.49\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.50\" \"PLAYER_FORAGING_LEVEL Current 15\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GoldQuality",
+                                    "Modification": "Set",
+                                    "Amount": 2,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.03\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.10\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.13\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.17\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.20\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.27\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.30\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.33\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.37\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.40\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.43\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.47\" \"PLAYER_FORAGING_LEVEL Current 15, RANDOM 0.50\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_IridiumQuality",
+                                    "Modification": "Set",
+                                    "Amount": 4,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 16"
+                                },
+                            ],
+                            "QualityModifierMode": "Maximum",
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GathererProfession",
+                                    "Chance": 0.2,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 13",
+                                    "Modification": "Multiply",
+                                    "Amount": 2,
+                                },
+                            ],
+                        },
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.SpringForagePatch_Rare",
+                            "Quality": 0,
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "Condition": "RANDOM 0.20",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_spring_rare",
+                            "MaxStack": 1,
+                            "MaxItems": 1,
+                            "QualityModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
+                                    "Modification": "Set",
+                                    "Amount": 1,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.12\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.18\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.28\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.32\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.36\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.39\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.42\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.45\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.46\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.48\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.49\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.50\" \"PLAYER_FORAGING_LEVEL Current 15\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GoldQuality",
+                                    "Modification": "Set",
+                                    "Amount": 2,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.03\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.10\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.13\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.17\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.20\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.27\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.30\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.33\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.37\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.40\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.43\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.47\" \"PLAYER_FORAGING_LEVEL Current 15, RANDOM 0.50\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_IridiumQuality",
+                                    "Modification": "Set",
+                                    "Amount": 4,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 16"
+                                },
+                            ],
+                            "QualityModifierMode": "Maximum",
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GathererProfession",
+                                    "Chance": 0.2,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 13",
+                                    "Modification": "Multiply",
+                                    "Amount": 2,
+                                },
+                            ],
+                        }
+                    ],
+                    "SecretNotes": false,
+                    "Exp": 12,
+                    "Skill": "forage",
+                    "ContextTags": [
+                        "color_green",
+                        "season_spring",
+                        "itsbenter_petalkin_forage_patch",
+                        "placeable"
+                    ],
+                },
+                "ItsBenter.ResourcefulFriends.SummerForagePatch": {
+                    "DisplayName": "{{i18n:SummerForagePatch_DisplayName}}",
+                    "Description": "{{i18n:SummerForagePatch_Description}}",
+                    "SpriteIndex": 5,
+                    "Texture": "Mods\\ItsBenter.ResourcefulFriends\\TileSheets\\Objects",
+                    "Health": 1, //every hit removes (UpgradeLevel + 1)*0.75  , e.g iridium would reduce 4HP
+                    "Width": 1,
+                    "Height": 1,
+                    "Sound": "axe",
+                    "ItemDropped": "(O)770", //Mixed seeds
+                    "MinDrops": 0, //min to drop
+                    "MaxDrops": 2, //max to drop
+                    "BreakingSound": "cut",
+                    "Tool": "AnyExceptWateringCan",
+                    "MinToolLevel": 0,
+                    "ExtraItems": [
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.SummerForagePatch_Common",
+                            "Quality": 0,
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_summer_common",
+                            "MinStack": 2,
+                            "MaxStack": 3,
+                            "MinItems": 2,
+                            "MaxItems": 2,
+                            "QualityModifiers": [
+                                //Need to test level 15 quality will it give gold or not
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
+                                    "Modification": "Set",
+                                    "Amount": 1,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.12\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.18\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.28\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.32\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.36\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.39\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.42\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.45\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.46\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.48\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.49\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.50\" \"PLAYER_FORAGING_LEVEL Current 15\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GoldQuality",
+                                    "Modification": "Set",
+                                    "Amount": 2,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.03\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.10\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.13\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.17\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.20\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.27\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.30\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.33\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.37\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.40\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.43\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.47\" \"PLAYER_FORAGING_LEVEL Current 15, RANDOM 0.50\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_IridiumQuality",
+                                    "Modification": "Set",
+                                    "Amount": 4,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 16"
+                                },
+                            ],
+                            "QualityModifierMode": "Maximum",
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GathererProfession",
+                                    "Chance": 0.2,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 13",
+                                    "Modification": "Multiply",
+                                    "Amount": 2,
+                                },
+                            ],
+                        },
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.SummerForagePatch_Uncommon",
+                            "Quality": 0,
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "Condition": "RANDOM 0.75",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_summer_uncommon",
+                            "MaxStack": 1,
+                            "MaxItems": 1,
+                            "QualityModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
+                                    "Modification": "Set",
+                                    "Amount": 1,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.12\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.18\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.28\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.32\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.36\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.39\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.42\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.45\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.46\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.48\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.49\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.50\" \"PLAYER_FORAGING_LEVEL Current 15\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GoldQuality",
+                                    "Modification": "Set",
+                                    "Amount": 2,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.03\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.10\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.13\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.17\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.20\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.27\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.30\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.33\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.37\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.40\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.43\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.47\" \"PLAYER_FORAGING_LEVEL Current 15, RANDOM 0.50\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_IridiumQuality",
+                                    "Modification": "Set",
+                                    "Amount": 4,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 16"
+                                },
+                            ],
+                            "QualityModifierMode": "Maximum",
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GathererProfession",
+                                    "Chance": 0.2,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 13",
+                                    "Modification": "Multiply",
+                                    "Amount": 2,
+                                },
+                            ],
+                        },
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.SummerForagePatch_Rare",
+                            "Quality": 0,
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "Condition": "RANDOM 0.20",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_summer_rare",
+                            "MaxStack": 1,
+                            "MaxItems": 1,
+                            "QualityModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
+                                    "Modification": "Set",
+                                    "Amount": 1,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.12\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.18\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.28\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.32\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.36\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.39\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.42\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.45\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.46\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.48\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.49\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.50\" \"PLAYER_FORAGING_LEVEL Current 15\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GoldQuality",
+                                    "Modification": "Set",
+                                    "Amount": 2,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.03\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.10\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.13\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.17\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.20\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.27\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.30\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.33\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.37\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.40\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.43\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.47\" \"PLAYER_FORAGING_LEVEL Current 15, RANDOM 0.50\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_IridiumQuality",
+                                    "Modification": "Set",
+                                    "Amount": 4,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 16"
+                                },
+                            ],
+                            "QualityModifierMode": "Maximum",
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GathererProfession",
+                                    "Chance": 0.2,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 13",
+                                    "Modification": "Multiply",
+                                    "Amount": 2,
+                                },
+                            ],
+                        }
+                    ],
+                    "SecretNotes": false,
+                    "Exp": 12,
+                    "Skill": "forage",
+                    "ContextTags": [
+                        "color_green",
+                        "season_summer",
+                        "itsbenter_petalkin_forage_patch",
+                        "placeable"
+                    ],
+                },
+                "ItsBenter.ResourcefulFriends.FallForagePatch": {
+                    "DisplayName": "{{i18n:FallForagePatch_DisplayName}}",
+                    "Description": "{{i18n:FallForagePatch_Description}}",
+                    "SpriteIndex": 6,
+                    "Texture": "Mods\\ItsBenter.ResourcefulFriends\\TileSheets\\Objects",
+                    "Health": 1, //every hit removes (UpgradeLevel + 1)*0.75  , e.g iridium would reduce 4HP
+                    "Width": 1,
+                    "Height": 1,
+                    "Sound": "axe",
+                    "ItemDropped": "(O)770", //Mixed seeds
+                    "MinDrops": 0, //min to drop
+                    "MaxDrops": 2, //max to drop
+                    "BreakingSound": "cut",
+                    "Tool": "AnyExceptWateringCan",
+                    "MinToolLevel": 0,
+                    "ExtraItems": [
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.FallForagePatch_Common",
+                            "Quality": 0,
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_fall_common",
+                            "MinStack": 2,
+                            "MaxStack": 3,
+                            "MinItems": 2,
+                            "MaxItems": 2,
+                            "QualityModifiers": [
+                                //Need to test level 15 quality will it give gold or not
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
+                                    "Modification": "Set",
+                                    "Amount": 1,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.12\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.18\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.28\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.32\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.36\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.39\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.42\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.45\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.46\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.48\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.49\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.50\" \"PLAYER_FORAGING_LEVEL Current 15\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GoldQuality",
+                                    "Modification": "Set",
+                                    "Amount": 2,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.03\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.10\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.13\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.17\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.20\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.27\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.30\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.33\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.37\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.40\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.43\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.47\" \"PLAYER_FORAGING_LEVEL Current 15, RANDOM 0.50\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_IridiumQuality",
+                                    "Modification": "Set",
+                                    "Amount": 4,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 16"
+                                },
+                            ],
+                            "QualityModifierMode": "Maximum",
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GathererProfession",
+                                    "Chance": 0.2,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 13",
+                                    "Modification": "Multiply",
+                                    "Amount": 2,
+                                },
+                            ],
+                        },
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.FallForagePatch_Uncommon",
+                            "Quality": 0,
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "Condition": "RANDOM 0.75",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_fall_uncommon",
+                            "MaxStack": 1,
+                            "MaxItems": 1,
+                            "QualityModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
+                                    "Modification": "Set",
+                                    "Amount": 1,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.12\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.18\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.28\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.32\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.36\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.39\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.42\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.45\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.46\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.48\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.49\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.50\" \"PLAYER_FORAGING_LEVEL Current 15\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GoldQuality",
+                                    "Modification": "Set",
+                                    "Amount": 2,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.03\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.10\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.13\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.17\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.20\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.27\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.30\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.33\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.37\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.40\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.43\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.47\" \"PLAYER_FORAGING_LEVEL Current 15, RANDOM 0.50\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_IridiumQuality",
+                                    "Modification": "Set",
+                                    "Amount": 4,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 16"
+                                },
+                            ],
+                            "QualityModifierMode": "Maximum",
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GathererProfession",
+                                    "Chance": 0.2,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 13",
+                                    "Modification": "Multiply",
+                                    "Amount": 2,
+                                },
+                            ],
+                        },
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.FallForagePatch_Rare",
+                            "Quality": 0,
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "Condition": "RANDOM 0.20",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_fall_rare",
+                            "MaxStack": 1,
+                            "MaxItems": 1,
+                            "QualityModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
+                                    "Modification": "Set",
+                                    "Amount": 1,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.12\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.18\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.28\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.32\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.36\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.39\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.42\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.45\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.46\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.48\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.49\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.50\" \"PLAYER_FORAGING_LEVEL Current 15\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GoldQuality",
+                                    "Modification": "Set",
+                                    "Amount": 2,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.03\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.10\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.13\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.17\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.20\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.27\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.30\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.33\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.37\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.40\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.43\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.47\" \"PLAYER_FORAGING_LEVEL Current 15, RANDOM 0.50\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_IridiumQuality",
+                                    "Modification": "Set",
+                                    "Amount": 4,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 16"
+                                },
+                            ],
+                            "QualityModifierMode": "Maximum",
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GathererProfession",
+                                    "Chance": 0.2,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 13",
+                                    "Modification": "Multiply",
+                                    "Amount": 2,
+                                },
+                            ],
+                        }
+                    ],
+                    "SecretNotes": false,
+                    "Exp": 12,
+                    "Skill": "forage",
+                    "ContextTags": [
+                        "color_orange",
+                        "season_fall",
+                        "itsbenter_petalkin_forage_patch",
+                        "placeable"
+                    ],
+                },
+                "ItsBenter.ResourcefulFriends.WinterForagePatch": {
+                    "DisplayName": "{{i18n:WinterForagePatch_DisplayName}}",
+                    "Description": "{{i18n:WinterForagePatch_Description}}",
+                    "SpriteIndex": 7,
+                    "Texture": "Mods\\ItsBenter.ResourcefulFriends\\TileSheets\\Objects",
+                    "Health": 1, //every hit removes (UpgradeLevel + 1)*0.75  , e.g iridium would reduce 4HP
+                    "Width": 1,
+                    "Height": 1,
+                    "Sound": "axe",
+                    "ItemDropped": "(O)770", //Mixed seeds
+                    "MinDrops": 0, //min to drop
+                    "MaxDrops": 2, //max to drop
+                    "BreakingSound": "cut",
+                    "Tool": "AnyExceptWateringCan",
+                    "MinToolLevel": 0,
+                    "ExtraItems": [
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.WinterForagePatch_Common",
+                            "Quality": 0,
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_winter_common",
+                            "MinStack": 2,
+                            "MaxStack": 3,
+                            "MinItems": 2,
+                            "MaxItems": 2,
+                            "QualityModifiers": [
+                                //Need to test level 15 quality will it give gold or not
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
+                                    "Modification": "Set",
+                                    "Amount": 1,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.12\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.18\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.28\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.32\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.36\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.39\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.42\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.45\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.46\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.48\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.49\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.50\" \"PLAYER_FORAGING_LEVEL Current 15\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GoldQuality",
+                                    "Modification": "Set",
+                                    "Amount": 2,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.03\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.10\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.13\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.17\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.20\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.27\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.30\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.33\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.37\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.40\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.43\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.47\" \"PLAYER_FORAGING_LEVEL Current 15, RANDOM 0.50\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_IridiumQuality",
+                                    "Modification": "Set",
+                                    "Amount": 4,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 16"
+                                },
+                            ],
+                            "QualityModifierMode": "Maximum",
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GathererProfession",
+                                    "Chance": 0.2,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 13",
+                                    "Modification": "Multiply",
+                                    "Amount": 2,
+                                },
+                            ],
+                        },
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.WinterForagePatch_Uncommon",
+                            "Quality": 0,
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "Condition": "RANDOM 0.75",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_winter_uncommon",
+                            "MaxStack": 1,
+                            "MaxItems": 1,
+                            "QualityModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
+                                    "Modification": "Set",
+                                    "Amount": 1,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.12\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.18\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.28\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.32\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.36\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.39\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.42\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.45\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.46\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.48\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.49\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.50\" \"PLAYER_FORAGING_LEVEL Current 15\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GoldQuality",
+                                    "Modification": "Set",
+                                    "Amount": 2,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.03\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.10\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.13\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.17\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.20\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.27\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.30\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.33\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.37\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.40\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.43\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.47\" \"PLAYER_FORAGING_LEVEL Current 15, RANDOM 0.50\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_IridiumQuality",
+                                    "Modification": "Set",
+                                    "Amount": 4,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 16"
+                                },
+                            ],
+                            "QualityModifierMode": "Maximum",
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GathererProfession",
+                                    "Chance": 0.2,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 13",
+                                    "Modification": "Multiply",
+                                    "Amount": 2,
+                                },
+                            ],
+                        },
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.WinterForagePatch_Rare",
+                            "Quality": 0,
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "Condition": "RANDOM 0.20",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_winter_rare",
+                            "MaxStack": 1,
+                            "MaxItems": 1,
+                            "QualityModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
+                                    "Modification": "Set",
+                                    "Amount": 1,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.12\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.18\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.28\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.32\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.36\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.39\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.42\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.45\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.46\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.48\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.49\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.50\" \"PLAYER_FORAGING_LEVEL Current 15\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GoldQuality",
+                                    "Modification": "Set",
+                                    "Amount": 2,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.03\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.10\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.13\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.17\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.20\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.27\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.30\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.33\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.37\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.40\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.43\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.47\" \"PLAYER_FORAGING_LEVEL Current 15, RANDOM 0.50\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_IridiumQuality",
+                                    "Modification": "Set",
+                                    "Amount": 4,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 16"
+                                },
+                            ],
+                            "QualityModifierMode": "Maximum",
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GathererProfession",
+                                    "Chance": 0.2,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 13",
+                                    "Modification": "Multiply",
+                                    "Amount": 2,
+                                },
+                            ],
+                        }
+                    ],
+                    "SecretNotes": false,
+                    "Exp": 12,
+                    "Skill": "forage",
+                    "ContextTags": [
+                        "color_blue",
+                        "season_winter",
+                        "itsbenter_petalkin_forage_patch",
+                        "placeable"
+                    ],
+                },
+                "ItsBenter.ResourcefulFriends.GingerIslandForagePatch": {
+                    "DisplayName": "{{i18n:GingerIslandForagePatch_DisplayName}}",
+                    "Description": "{{i18n:GingerIslandForagePatch_Description}}",
+                    "SpriteIndex": 8,
+                    "Texture": "Mods\\ItsBenter.ResourcefulFriends\\TileSheets\\Objects",
+                    "Health": 1, //every hit removes (UpgradeLevel + 1)*0.75  , e.g iridium would reduce 4HP
+                    "Width": 1,
+                    "Height": 1,
+                    "Sound": "axe",
+                    "ItemDropped": "(O)770", //Mixed seeds
+                    "MinDrops": 0, //min to drop
+                    "MaxDrops": 2, //max to drop
+                    "BreakingSound": "cut",
+                    "Tool": "AnyExceptWateringCan",
+                    "MinToolLevel": 0,
+                    "ExtraItems": [
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.GingerIslandForagePatch_Common",
+                            "Quality": 0,
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_gingerisland_common",
+                            "MinStack": 2,
+                            "MaxStack": 3,
+                            "MinItems": 2,
+                            "MaxItems": 2,
+                            "QualityModifiers": [
+                                //Need to test level 15 quality will it give gold or not
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
+                                    "Modification": "Set",
+                                    "Amount": 1,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.12\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.18\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.28\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.32\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.36\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.39\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.42\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.45\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.46\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.48\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.49\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.50\" \"PLAYER_FORAGING_LEVEL Current 15\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GoldQuality",
+                                    "Modification": "Set",
+                                    "Amount": 2,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.03\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.10\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.13\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.17\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.20\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.27\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.30\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.33\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.37\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.40\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.43\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.47\" \"PLAYER_FORAGING_LEVEL Current 15, RANDOM 0.50\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_IridiumQuality",
+                                    "Modification": "Set",
+                                    "Amount": 4,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 16"
+                                },
+                            ],
+                            "QualityModifierMode": "Maximum",
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GathererProfession",
+                                    "Chance": 0.2,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 13",
+                                    "Modification": "Multiply",
+                                    "Amount": 2,
+                                },
+                            ],
+                        },
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.GingerIslandForagePatch_Uncommon",
+                            "Quality": 0,
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "Condition": "RANDOM 0.75",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_gingerisland_uncommon",
+                            "MaxStack": 1,
+                            "MaxItems": 1,
+                            "QualityModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
+                                    "Modification": "Set",
+                                    "Amount": 1,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.12\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.18\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.28\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.32\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.36\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.39\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.42\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.45\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.46\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.48\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.49\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.50\" \"PLAYER_FORAGING_LEVEL Current 15\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GoldQuality",
+                                    "Modification": "Set",
+                                    "Amount": 2,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.03\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.10\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.13\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.17\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.20\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.27\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.30\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.33\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.37\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.40\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.43\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.47\" \"PLAYER_FORAGING_LEVEL Current 15, RANDOM 0.50\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_IridiumQuality",
+                                    "Modification": "Set",
+                                    "Amount": 4,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 16"
+                                },
+                            ],
+                            "QualityModifierMode": "Maximum",
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GathererProfession",
+                                    "Chance": 0.2,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 13",
+                                    "Modification": "Multiply",
+                                    "Amount": 2,
+                                },
+                            ],
+                        },
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.GingerIslandForagePatch_Rare",
+                            "Quality": 0,
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "Condition": "RANDOM 0.20",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_gingerisland_rare",
+                            "MaxStack": 1,
+                            "MaxItems": 1,
+                            "QualityModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
+                                    "Modification": "Set",
+                                    "Amount": 1,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.12\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.18\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.28\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.32\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.36\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.39\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.42\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.45\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.46\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.48\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.49\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.50\" \"PLAYER_FORAGING_LEVEL Current 15\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GoldQuality",
+                                    "Modification": "Set",
+                                    "Amount": 2,
+                                    "Condition": "!PLAYER_HAS_PROFESSION Current 16, ANY \"PLAYER_FORAGING_LEVEL Current 1 1, RANDOM 0.03\" \"PLAYER_FORAGING_LEVEL Current 2 2, RANDOM 0.07\" \"PLAYER_FORAGING_LEVEL Current 3 3, RANDOM 0.10\" \"PLAYER_FORAGING_LEVEL Current 4 4, RANDOM 0.13\" \"PLAYER_FORAGING_LEVEL Current 5 5, RANDOM 0.17\" \"PLAYER_FORAGING_LEVEL Current 6 6, RANDOM 0.20\" \"PLAYER_FORAGING_LEVEL Current 7 7, RANDOM 0.23\" \"PLAYER_FORAGING_LEVEL Current 8 8, RANDOM 0.27\" \"PLAYER_FORAGING_LEVEL Current 9 9, RANDOM 0.30\" \"PLAYER_FORAGING_LEVEL Current 10 10, RANDOM 0.33\" \"PLAYER_FORAGING_LEVEL Current 11 11, RANDOM 0.37\" \"PLAYER_FORAGING_LEVEL Current 12 12, RANDOM 0.40\" \"PLAYER_FORAGING_LEVEL Current 13 13, RANDOM 0.43\" \"PLAYER_FORAGING_LEVEL Current 14 14, RANDOM 0.47\" \"PLAYER_FORAGING_LEVEL Current 15, RANDOM 0.50\""
+                                },
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_IridiumQuality",
+                                    "Modification": "Set",
+                                    "Amount": 4,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 16"
+                                },
+                            ],
+                            "QualityModifierMode": "Maximum",
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.ForagePatch_GathererProfession",
+                                    "Chance": 0.2,
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 13",
+                                    "Modification": "Multiply",
+                                    "Amount": 2,
+                                },
+                            ],
+                        }
+                    ],
+                    "SecretNotes": false,
+                    "Exp": 12,
+                    "Skill": "forage",
+                    "ContextTags": [
+                        "color_green",
+                        "season_summer",
+                        "itsbenter_petalkin_forage_patch",
+                        "placeable"
+                    ],
+                },
+                //MolecatNode
+                "ItsBenter.ResourcefulFriends.MolecatNode": {
+                    "DisplayName": "{{i18n:MolecatNode_DisplayName}}",
+                    "Description": "{{i18n:MolecatNode_Description}}",
+                    "Texture": "Mods\\ItsBenter.ResourcefulFriends\\TileSheets\\Objects",
+                    "SpriteIndex": 9,
+                    "Width": 1,
+                    "Height": 1,
+                    "Health": 1,
+                    "Sound": "hammer",
+                    "ItemDropped": "(O)390", //Stone
+                    "MinDrops": 2, //min to drop
+                    "MaxDrops": 3, //max to drop
+                    "BreakingSound": "stoneCrack",
+                    "Debris": "stone #778180",
+                    "Tool": "Pickaxe",
+                    "MinToolLevel": 0,
+                    "Shake": true,
+                    "Exp": 20,
+                    "Skill": "mining",
+                    "ContextTags": [
+                        "color_grey",
+                        "itsbenter_molecatnode",
+                        "placeable"
+                    ],
+                    "ExtraItems": [
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.MolecatNode_BasicResources", //Copper, Iron, Gold
+                            "Quality": 0,
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_ID Target (O)378 (O)380 (O)384", //Ore item except iridium and radioactive ore
+                            "MinStack": 2,
+                            "MaxStack": 4,
+                            "MinItems": 2,
+                            "MaxItems": 2,
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.MolecatNode_MinerProfession",
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 18", //Miner
+                                    "Modification": "Add",
+                                    "Amount": 1,
+                                }
+                            ],
+                        },
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.MolecatNode_Iridium", //Iridium
+                            "Quality": 0,
+                            "Condition": "PLAYER_STAT Any iridiumFound 1", //Has found at least 1 iridium
+                            "ItemId": "(O)386", //Iridium
+                            "Chance": 0.33,
+                            "MinStack": 1,
+                            "MaxStack": 2,
+                            "StackModifiers": [
+                                {
+                                    "Id": "ItsBenter.ResourcefulFriends.MolecatNode_MinerProfession",
+                                    "Condition": "PLAYER_HAS_PROFESSION Current 18", //Miner
+                                    "Modification": "Add",
+                                    "Amount": 1,
+                                }
+                            ],
+                        },
+                    ],
+                }
+            }
+        },      
+    ]
+}

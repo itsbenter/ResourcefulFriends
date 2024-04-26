@@ -1,0 +1,82 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/FishPondData",
+            "Entries": {
+                "ItsBenter.ResourcefulFriends.Jellomone": {
+                    "Id": "ItsBenter.ResourcefulFriends.Jellomone",
+                    "RequiredTags": [
+                        "id_o_itsbenter.resourcefulfriends.jellomone"
+                    ],
+                    "Precedence": 0,
+                    "SpawnTime": 2,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 9,
+                            "Chance": 0.06,
+                            "ItemId": "(O)543",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 9,
+                            "Chance": 0.06,
+                            "ItemId": "(O)571",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        }
+                    ],
+                    "PopulationGates": null,
+                    "CustomFields": null
+                },
+                /*"Id": "ItsBenter.ResourcefulFriends.Jellomone",
+                    "RequiredTags": [
+                        "itsbenter_timberbarkpile"
+                    ],
+                    "Precedence": 0,
+                    "SpawnTime": -1,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 9,
+                            "RandomItemId": [
+                                "(O)SeaJelly",
+                                "(O)RiverJelly",
+                                "(O)CaveJelly",
+                            ],
+                            "MinQuantity": 3,
+                            "MaxQuantity": 3,
+                            "Chance": 0.5
+                        },
+                        {
+                            "RequiredPopulation": 5,
+                            "RandomItemId": [
+                                "(O)SeaJelly",
+                                "(O)RiverJelly",
+                                "(O)CaveJelly",
+                            ],
+                            "MinQuantity": 2,
+                            "MaxQuantity": 2,
+                            "Chance": 0.5
+                        },
+                        {
+                            "RequiredPopulation": 1,
+                            "RandomItemId": [
+                                "(O)SeaJelly",
+                                "(O)RiverJelly",
+                                "(O)CaveJelly",
+                            ],
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1,
+                            "Chance": 0.5
+                        }
+                    ],
+                    "PopulationGates": {},
+                    "CustomFields": null
+                    
+            },*/
+            }
+        }
+    ]
+}

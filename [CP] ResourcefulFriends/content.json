@@ -1,0 +1,156 @@
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+  "Format": "2.0.0",
+  "ConfigSchema": {
+    "EnableCoalclaw": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Coalclaw"
+    },
+    "CoalclawProduceOnWinter": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Coalclaw"
+    },
+    "CoalclawProduceOnRainyDays": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Section": "Coalclaw"
+    },
+    "EnableHoneypuff": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Honeypuff"
+    },
+    "EnableJellomone": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Jellomone"
+    },
+    "EnableMolecat": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Molecat"
+    },
+    "MolecatProduceOnWinter": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Molecat"
+    },
+    "MolecatProduceOnRainyDays": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Section": "Molecat"
+    },
+    "EnablePetalkin": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Petalkin"
+    },
+    "EnableTimberbark": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Timberbark"
+    }
+  },
+  "DynamicTokens": [
+    //Coalclaw
+    {
+      "Name": "CoalclawHarvestTypeToken",
+      "Value": "DigUp",
+    },
+    {
+      "Name": "CoalclawHarvestTypeToken",
+      "Value": "DropOvernight",
+      "When": {
+        "Season": "winter",
+        "CoalclawProduceOnWinter": true
+      }
+    },
+    {
+      "Name": "CoalclawHarvestTypeToken",
+      "Value": "DropOvernight",
+      "When": {
+        "Weather": "Rain, Storm, GreenRain",
+        "CoalclawProduceOnRainyDays": true
+      }
+    },
+    //Molecat
+    {
+      "Name": "MolecatHarvestTypeToken",
+      "Value": "DigUp",
+    },
+    {
+      "Name": "MolecatHarvestTypeToken",
+      "Value": "DropOvernight",
+      "When": {
+        "Season": "winter",
+        "MolecatProduceOnWinter": true
+      }
+    },
+    {
+      "Name": "MolecatHarvestTypeToken",
+      "Value": "DropOvernight",
+      "When": {
+        "Weather": "Rain, Storm, GreenRain",
+        "MolecatProduceOnRainyDays": true
+      }
+    },
+  ],
+  "Changes": [
+    {
+      "LogName": "Load aquarium sprites",
+      "Action": "Load",
+      "Target": "Mods/ItsBenter.ResourcefulFriends/TileSheets/AquariumFish",
+      "FromFile": "TileSheets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "LogName": "Load object sprites",
+      "Action": "Load",
+      "Target": "Mods/ItsBenter.ResourcefulFriends/TileSheets/Objects",
+      "FromFile": "TileSheets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "LogName": "Load animal shop sprites",
+      "Action": "Load",
+      "Target": "Mods/ItsBenter.ResourcefulFriends/Animals/ShopTexture",
+      "FromFile": "Animals/{{TargetWithoutPath}}.png"
+    },
+    {
+      "LogName": "Load petalkin shop sprites",
+      "Action": "Load",
+      "Target": "Mods/ItsBenter.ResourcefulFriends/Animals/ShopTexturePetalkin",
+      "FromFile": "Animals/{{TargetWithoutPath}}_{{Season}}.png"
+    },
+    {
+      "LogName": "Load animals sprite",
+      "Action": "Load",
+      "Target": "Mods/ItsBenter.ResourcefulFriends/Animals/Coalclaw, Mods/ItsBenter.ResourcefulFriends/Animals/BabyCoalclaw, Mods/ItsBenter.ResourcefulFriends/Animals/CoalclawCream, Mods/ItsBenter.ResourcefulFriends/Animals/BabyCoalclawCream, Mods/ItsBenter.ResourcefulFriends/Animals/Honeypuff, Mods/ItsBenter.ResourcefulFriends/Animals/BabyHoneypuff, Mods/ItsBenter.ResourcefulFriends/Animals/HoneypuffYellow, Mods/ItsBenter.ResourcefulFriends/Animals/BabyHoneypuffYellow, Mods/ItsBenter.ResourcefulFriends/Animals/HoneypuffBlue, Mods/ItsBenter.ResourcefulFriends/Animals/BabyHoneypuffBlue, Mods/ItsBenter.ResourcefulFriends/Animals/HoneypuffRed, Mods/ItsBenter.ResourcefulFriends/Animals/BabyHoneypuffRed, Mods/ItsBenter.ResourcefulFriends/Animals/Molecat, Mods/ItsBenter.ResourcefulFriends/Animals/BabyMolecat, Mods/ItsBenter.ResourcefulFriends/Animals/MolecatCookies, Mods/ItsBenter.ResourcefulFriends/Animals/BabyMolecatCookies, Mods/ItsBenter.ResourcefulFriends/Animals/MolecatGray, Mods/ItsBenter.ResourcefulFriends/Animals/BabyMolecatGray, Mods/ItsBenter.ResourcefulFriends/Animals/MolecatWhite, Mods/ItsBenter.ResourcefulFriends/Animals/BabyMolecatWhite, Mods/ItsBenter.ResourcefulFriends/Animals/MolecatBlack, Mods/ItsBenter.ResourcefulFriends/Animals/BabyMolecatBlack, Mods/ItsBenter.ResourcefulFriends/Animals/Timberbark, Mods/ItsBenter.ResourcefulFriends/Animals/BabyTimberbark",
+      "FromFile": "Animals/{{TargetWithoutPath}}.png"
+    },
+    {
+      "LogName": "Load petalkin seasonal sprite",
+      "Action": "Load",
+      "Target": "Mods/ItsBenter.ResourcefulFriends/Animals/Petalkin, Mods/ItsBenter.ResourcefulFriends/Animals/BabyPetalkin",
+      "FromFile": "Animals/{{TargetWithoutPath}}_{{Season}}.png",
+      "When": {
+        "LocationContext": "Default"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Load petalkin Ginger Island sprite",
+      "Action": "Load",
+      "Target": "Mods/ItsBenter.ResourcefulFriends/Animals/Petalkin, Mods/ItsBenter.ResourcefulFriends/Animals/BabyPetalkin",
+      "FromFile": "Animals/{{TargetWithoutPath}}_GingerIsland.png",
+      "When": {
+        "LocationContext": "Island"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/AquariumFish.json, Data/FarmAnimals.json, Data/FishPondData.json, Data/Objects.json, Data/Shops.json, Mods/ItemExtensions.json"
+    },
+  ]
+}
