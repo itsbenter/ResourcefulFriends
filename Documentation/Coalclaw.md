@@ -25,7 +25,7 @@ The condition to produce Coalclaw Clump is the same to Pig producing Truffles. R
 
 ### Estimation
 
-Here is rough estimate of Coalclow produce in a season. A number between 2 produce to 3 produce per day is probably a reasonable estimate. [Spreadsheet](https://docs.google.com/spreadsheets/d/13k0kkcyTUVJseXhAiZoKnOVubqOB7M9F3xILHV-Sj54/edit#gid=549968683) with the calculation can be accessed and can be used (copy to your Google account to tweak the number) to check the estimate in case player wish to change the default produce quantity.
+Here is rough estimate of Coalclow produce in a season. A number between 2 produce to 3 produce per day is probably a reasonable estimate. [Spreadsheet](https://docs.google.com/spreadsheets/d/13k0kkcyTUVJseXhAiZoKnOVubqOB7M9F3xILHV-Sj54/edit#gid=549968683) with the calculation can be accessed and can be used to check the estimate in case player wish to change the default produce quantity. To change the numbers in the spreadsheet copy the file to your Google account.
 
 | Resource | Produce per day: 1 | Produce per day: 2 | Produce per day: 3 |
 | -------- | ------------------ | ------------------ | ------------------ |
