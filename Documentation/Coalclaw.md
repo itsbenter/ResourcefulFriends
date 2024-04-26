@@ -4,7 +4,7 @@ Coalclaw is a farm animal that lives in a Coop. It can be purchased at Marnie's 
 
 ## Variation
 
-There are two variations of Coalclaw. When purchasing from Marnie there is equal chance for both variation to be chosen.
+There are two variations of Coalclaw. When purchasing from Marnie there is equal chance for both variations to be chosen.
 
 ![Coalclaw_Variations](Animals/Coalclaw_Variations.png)
 
@@ -20,6 +20,7 @@ Coalclaw Clump and Large Coalclaw Clump cannot be picked up and instead must be 
 | -------- | --- | --- | --- |
 | **Coalclaw Clump** | | | |
 | Coal | 4 | 6 | 5 |
+| | | | |
 | **Large Coalclaw Clump**<sup>[1](#LargeCoalclawClump)</sup> | | | |
 | Coal | 7 | 9 | 8 |
 
@@ -39,14 +40,15 @@ Here is rough estimate of Coalclow produce in a season. A number between 2 produ
 | Coal | 182 | 364 | 546 |
 | *With Prospector profession*<sup>[2](#LargeCoalclawClump)</sup> | 273 | 546 | 819 |
 
-<a name="LargeCoalclawClump">1</a>: 50% chance to produce when having sufficient friendship and happiness<br>
-<a name="Prospector">2</a>: 50% increase in stack size when having Prospector profession
-
 ### Auto Grabber Interaction
 
-If Auto Grabber is placed inside Coop and Coalclaw produce inside the Coop (using appropriate config), Coalclaw Clump and Large Coalclaw Clump will be picked up by the machine. Player can grab the item to inventory, place it on the ground, and interact using appropriate tool to get the resources.
+If Auto Grabber is placed inside Coop and Coalclaw produce inside the Coop (using appropriate config), Coalclaw Clump and Large Coalclaw Clump will be picked up by the machine. Player can grab the clump to the inventory, place them on the ground, and destroy them using pickaxe to get the resources.
 
-Adding support to place the items into machine for a smoother process with [Automate](https://www.nexusmods.com/stardewvalley/mods/1063) is planned for future update of this mod.
+Adding patch to process the item with machine for full automate farm when using [Automate](https://www.nexusmods.com/stardewvalley/mods/1063) is in to-do-list for future update of this mod.
 
 ## Configuration
 
+## Footnote
+
+<a name="LargeCoalclawClump">1</a>: 50% chance to produce when having sufficient friendship and happiness<br>
+<a name="Prospector">2</a>: 50% increase in stack size when having Prospector profession
