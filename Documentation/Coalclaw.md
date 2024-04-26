@@ -31,10 +31,11 @@ Here is rough estimate of Coalclow produce in a season. A number between 2 produ
 | -------- | ------------------ | ------------------ | ------------------ |
 | **Coalclaw Clump** | | | |
 | Coal | 140 | 280 | 420 |
-| *Prospector*<sup>[2](#LargeCoalclawClump)</sup> | 210 | 420 | 630 |
+| *With Prospector profession*<sup>[2](#LargeCoalclawClump)</sup> | 210 | 420 | 630 |
+| | | | |
 | **Large Coalclaw Clump**<sup>[1](#LargeCoalclawClump)</sup> | | | |
-| *Coal* | 182 | 364 | 546 |
-| *Prospector*<sup>[2](#LargeCoalclawClump)</sup> | 273 | 546 | 819 |
+| Coal | 182 | 364 | 546 |
+| *With Prospector profession*<sup>[2](#LargeCoalclawClump)</sup> | 273 | 546 | 819 |
 
 <a name="LargeCoalclawClump">1</a>: 50% chance to produce when having sufficient friendship and happiness<br>
 <a name="Prospector">2</a>: 50% increase in stack size when having Prospector profession
