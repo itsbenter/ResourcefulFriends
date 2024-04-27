@@ -1,0 +1,74 @@
+# Petalkin
+
+Petalkin is a farm animal that lives in a Barn. It can be purchased at Marnie's Ranch for 2000G. Petalkin can become pregnant and give birth.
+
+## Seasonal Apperance
+
+Petalkin appearance change based on the season. It also have specific look if player use mod to place Petalkin in Ginger Island.
+
+![Petalkin_Variations](Animals/Petalkin_Variations.png)
+
+## Produce
+
+Petalkin who eat every day mature after 5 nights have passed. A mature and fed Petalkin will produce Forage Patch every 3 days. Once 4 hearts friendship is reached, Petalkin will produce Forage Patch every 2 days. Forage Patch appearance and content is different based on season (and location).
+
+![Petalkin_Produces](Animals/Petalkin_Produces.png)
+
+Forage Patch cannot be picked up and instead must be destroyed using scythe, giving 12 foraging experience. Quality of forages is the same as if player were gathering forages, affected by Foraging skill. The number of forages produced when destroying Forage Patch has 20% chance to double when player has [Gatherer](https://stardewvalleywiki.com/Skills#Foraging) profession. The quality of forages produced will be Iridium quality when player has [Botanist](https://stardewvalleywiki.com/Skills#Foraging) profession.
+
+| Resource | Min | Max | Avg |
+| -------- | --- | --- | --- |
+| Mixed Seeds | 1 | 3 | 2 |
+| | | | |
+| Common Forages | | | 7 |
+| *Type of forage* | 2 | 2 | 2 |
+| *Stack size per forage* | 2 | 5 | 3.5 |
+| | | | |
+| Uncommon Forages (75% chance) | | | 1.5 |
+| *Type of forage* | 1 | 1 | 1 |
+| *Stack size per forage* | 1 | 2 | 1.5 |
+| | | | |
+| Rare Forages (20% chance) | | | 1 |
+| *Type of forage* | 1 | 1 | 1 |
+| *Stack size per forage* | 1 | 1 | 1 |
+
+### Forage Grouping
+
+When Forage Patch is destroyed, it will always produce 2 types of Common Forages with stack size betweem 2 to 5. Forages in the same rarity category have equal chance to be produced. There is no Rare Forages in the mod, but other mod authors can add to the pool, refer to [Compatibility](Compatibility.md).
+
+| Context | Common Forages | Uncommon Forages | Rare Forages |
+| ------- | -------------- | ---------------- | ------------ |
+| Spring | Dandelion, Daffodil, Wild Horseradish, Leek, Spring Onion, Salmonberry<sup>[1](#Salmonberru)</sup> | Common Mushroom, Morel | |
+| Summer | Sweet Pea, Spice Berry, Grape | Red Mushroom, Fiddlehead Fern | |
+| Fall | Common Mushroom, Blackberry, Wild Plum, Hazelnut | Red Mushroom, Chanterelle, Purple Mushroom | |
+| Winter | Crocus, Holly, Crystal Fruit | Winter Root, Snow Yam | |
+| Ginger Island | Ginger, Fiddlehead Fern, Taro Tuber | |
+
+### Estimation
+
+Here is a rough estimate of Petalkin produce in a season. [Spreadsheet](https://docs.google.com/spreadsheets/d/13k0kkcyTUVJseXhAiZoKnOVubqOB7M9F3xILHV-Sj54/edit#gid=549968683) can be accessed and used in case player wish to change the default produce quantity. To edit the spreadsheet, copy the file to your Google account.
+
+| Resource | Days to produce: 3 | Days to produce: 2 |
+| -------- | ------------------ | ------------------ |
+| Mixed Seeds | 18 | 28 |
+| | | |
+| Common Forages | 63 | 98 |
+| *With Gatherer profession*<sup>[2](#Gatherer)</sup> | 88.2 | 137.2 |
+| | | |
+| Uncommon Forages (75% chance) | 10.125 | 15.75 |
+| *With Gatherer profession*<sup>[2](#Gatherer)</sup> | 14.175 | 22.05 |
+| | | |
+| Rare Forages (20% chance) | 1.8 | 2.8 |
+| *With Gatherer profession*<sup>[2](#Gatherer)</sup> | 2.52 | 3.92 |
+
+### Auto Grabber Interaction
+
+If Auto Grabber is placed inside Barn, Forage Patch will be picked up by Auto Grabber. Player can then grab the Forage Patch to the inventory, place them on the ground, and destroy them using scythe to get the resources.
+
+Adding patch to process the item with machine to run fully automated farm when using [Automate](https://www.nexusmods.com/stardewvalley/mods/1063) is in to-do-list for future update of this mod.
+
+## Configuration
+
+## Footnote
+<a name="Salmonberry">1</a>: Only during Salmonberry season (15 - 18 Spring)<br>
+<a name="Gatherer">2</a>: 20% chance to double the stack size when has Gatherer profession<br>

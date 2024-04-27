@@ -262,8 +262,8 @@
                     "Height": 1,
                     "Sound": "axe",
                     "ItemDropped": "(O)770", //Mixed seeds
-                    "MinDrops": 0, //min to drop
-                    "MaxDrops": 2, //max to drop
+                    "MinDrops": 1, //min to drop
+                    "MaxDrops": 3, //max to drop
                     "BreakingSound": "cut",
                     "Tool": "AnyExceptWateringCan",
                     "MinToolLevel": 0,
@@ -274,7 +274,7 @@
                             "ItemId": "RANDOM_ITEMS (O)",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_spring_common",
                             "MinStack": 2,
-                            "MaxStack": 3,
+                            "MaxStack": 5,
                             "MinItems": 2,
                             "MaxItems": 2,
                             "QualityModifiers": [
@@ -408,8 +408,8 @@
                     "Height": 1,
                     "Sound": "axe",
                     "ItemDropped": "(O)770", //Mixed seeds
-                    "MinDrops": 0, //min to drop
-                    "MaxDrops": 2, //max to drop
+                    "MinDrops": 1, //min to drop
+                    "MaxDrops": 3, //max to drop
                     "BreakingSound": "cut",
                     "Tool": "AnyExceptWateringCan",
                     "MinToolLevel": 0,
@@ -420,7 +420,7 @@
                             "ItemId": "RANDOM_ITEMS (O)",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_summer_common",
                             "MinStack": 2,
-                            "MaxStack": 3,
+                            "MaxStack": 5,
                             "MinItems": 2,
                             "MaxItems": 2,
                             "QualityModifiers": [
@@ -554,8 +554,8 @@
                     "Height": 1,
                     "Sound": "axe",
                     "ItemDropped": "(O)770", //Mixed seeds
-                    "MinDrops": 0, //min to drop
-                    "MaxDrops": 2, //max to drop
+                    "MinDrops": 1, //min to drop
+                    "MaxDrops": 3, //max to drop
                     "BreakingSound": "cut",
                     "Tool": "AnyExceptWateringCan",
                     "MinToolLevel": 0,
@@ -566,7 +566,7 @@
                             "ItemId": "RANDOM_ITEMS (O)",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_fall_common",
                             "MinStack": 2,
-                            "MaxStack": 3,
+                            "MaxStack": 5,
                             "MinItems": 2,
                             "MaxItems": 2,
                             "QualityModifiers": [
@@ -700,8 +700,8 @@
                     "Height": 1,
                     "Sound": "axe",
                     "ItemDropped": "(O)770", //Mixed seeds
-                    "MinDrops": 0, //min to drop
-                    "MaxDrops": 2, //max to drop
+                    "MinDrops": 1, //min to drop
+                    "MaxDrops": 3, //max to drop
                     "BreakingSound": "cut",
                     "Tool": "AnyExceptWateringCan",
                     "MinToolLevel": 0,
@@ -712,7 +712,7 @@
                             "ItemId": "RANDOM_ITEMS (O)",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_winter_common",
                             "MinStack": 2,
-                            "MaxStack": 3,
+                            "MaxStack": 5,
                             "MinItems": 2,
                             "MaxItems": 2,
                             "QualityModifiers": [
@@ -846,8 +846,8 @@
                     "Height": 1,
                     "Sound": "axe",
                     "ItemDropped": "(O)770", //Mixed seeds
-                    "MinDrops": 0, //min to drop
-                    "MaxDrops": 2, //max to drop
+                    "MinDrops": 1, //min to drop
+                    "MaxDrops": 3, //max to drop
                     "BreakingSound": "cut",
                     "Tool": "AnyExceptWateringCan",
                     "MinToolLevel": 0,
@@ -858,7 +858,7 @@
                             "ItemId": "RANDOM_ITEMS (O)",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_gingerisland_common",
                             "MinStack": 2,
-                            "MaxStack": 3,
+                            "MaxStack": 5,
                             "MinItems": 2,
                             "MaxItems": 2,
                             "QualityModifiers": [

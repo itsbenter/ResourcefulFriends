@@ -1,6 +1,6 @@
 # Coalclaw
 
-Coalclaw is a farm animal that lives in a Coop. It can be purchased at Marnie's Ranch for 550G or hatched by placing an Coalclaw Egg into an Incubator, taking 4,500m (2d 21h 40m) to incubate.
+Coalclaw is a farm animal that lives in a Coop. It can be purchased at Marnie's Ranch for 550G or hatched by placing a Coalclaw Egg into an Incubator, taking 4,500m (2d 21h 40m) to incubate.
 
 ## Variation
 
@@ -21,34 +21,33 @@ Coalclaw Clump and Large Coalclaw Clump cannot be picked up and instead must be 
 | **Coalclaw Clump** | | | |
 | Coal | 4 | 6 | 5 |
 | | | | |
-| **Large Coalclaw Clump**<sup>[1](#LargeCoalclawClump)</sup> | | | |
+| **Large Coalclaw Clump** | | | |
 | Coal | 7 | 9 | 8 |
 
-The condition to produce Coalclaw Clump is the same to Pig producing Truffles. Refer to [Pig wiki](https://stardewvalleywiki.com/Pig) page for details. This pig-like behavior means Coalclaw will not produce during rain and winter. However, a config is provided to make Coalclow produce exactly one Coalclaw Clump inside the coop on such day. This is set to 'true' by default.
+The condition to produce Coalclaw Clump is the same to Pig producing Truffles. Refer to [Pig wiki](https://stardewvalleywiki.com/Pig) page for details. This pig-like behavior means Coalclaw will not produce during rain and winter. However, a config is provided to make Coalclaw produces exactly one Coalclaw Clump inside the coop on such day. This is set to 'true' by default.
 
 ### Estimation
 
-Here is rough estimate of Coalclow produce in a season. A number between 2 produce to 3 produce per day is probably a reasonable estimate. [Spreadsheet](https://docs.google.com/spreadsheets/d/13k0kkcyTUVJseXhAiZoKnOVubqOB7M9F3xILHV-Sj54/edit#gid=549968683) with the calculation can be accessed and can be used to check the estimate in case player wish to change the default produce quantity. To change the numbers in the spreadsheet copy the file to your Google account.
+Here is a rough estimate of Coalclaw produce in a season. A number between 2 produce to 3 produce per day is probably a reasonable estimate at max heart. [Spreadsheet](https://docs.google.com/spreadsheets/d/13k0kkcyTUVJseXhAiZoKnOVubqOB7M9F3xILHV-Sj54/edit#gid=549968683) can be accessed and used in case player wish to change the default produce quantity. To edit the spreadsheet, copy the file to your Google account.
 
 | Resource | Produce per day: 1 | Produce per day: 2 | Produce per day: 3 |
 | -------- | ------------------ | ------------------ | ------------------ |
 | **Coalclaw Clump** | | | |
 | Coal | 140 | 280 | 420 |
-| *With Prospector profession*<sup>[2](#LargeCoalclawClump)</sup> | 210 | 420 | 630 |
+| *With Prospector profession*<sup>[1](#LargeCoalclawClump)</sup> | 210 | 420 | 630 |
 | | | | |
-| **Large Coalclaw Clump**<sup>[1](#LargeCoalclawClump)</sup> | | | |
+| **Large Coalclaw Clump**<sup>[2](#LargeCoalclawClump)</sup> | | | |
 | Coal | 182 | 364 | 546 |
-| *With Prospector profession*<sup>[2](#LargeCoalclawClump)</sup> | 273 | 546 | 819 |
+| *With Prospector profession*<sup>[1](#LargeCoalclawClump)</sup> | 273 | 546 | 819 |
 
 ### Auto Grabber Interaction
 
-If Auto Grabber is placed inside Coop and Coalclaw produce inside the Coop (using appropriate config), Coalclaw Clump and Large Coalclaw Clump will be picked up by the machine. Player can grab the clump to the inventory, place them on the ground, and destroy them using pickaxe to get the resources.
+If Auto Grabber is placed inside Coop and Coalclaw produce inside the Coop (using appropriate config), Coalclaw Clump and Large Coalclaw Clump will be picked up by Auto Grabber. Player can then grab the clumps to the inventory, place them on the ground, and destroy them using pickaxe to get the resources.
 
-Adding patch to process the item with machine for full automate farm when using [Automate](https://www.nexusmods.com/stardewvalley/mods/1063) is in to-do-list for future update of this mod.
+Adding patch to process the item with machine to run fully automated farm when using [Automate](https://www.nexusmods.com/stardewvalley/mods/1063) is in to-do-list for future update of this mod.
 
 ## Configuration
 
 ## Footnote
-
-<a name="LargeCoalclawClump">1</a>: 50% chance to produce when having sufficient friendship and happiness<br>
-<a name="Prospector">2</a>: 50% increase in stack size when having Prospector profession
+<a name="Prospector">1</a>: 50% increase in stack size when having Prospector profession<br>
+<a name="LargeCoalclawClump">2</a>: 50% chance to produce when having sufficient friendship and happiness<br>
