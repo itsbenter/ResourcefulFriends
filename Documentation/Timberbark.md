@@ -21,7 +21,7 @@ Timberbark who eat every day mature after 3 nights have passed. A mature and fed
 Timberbark Pile and Large Timberbark Pile cannot be picked up and instead must be destroyed using axe, giving 5 foraging experience. The forages produced has 20% chance to double when player has [Gatherer](https://stardewvalleywiki.com/Skills#Foraging) profession. The quality of forages produced will be Iridium quality when player has [Botanist](https://stardewvalleywiki.com/Skills#Foraging) profession.
 
 | Resource | Min | Max | Avg |
-| -------- | --: | --: | --: |
+| -------- | --- | --- | --- |
 | **Timberbark Pile** | | | |
 | Sap | 5 | 5 | 5 |
 | Moss | 1 | 3 | 2 |
@@ -38,7 +38,7 @@ Timberbark Pile and Large Timberbark Pile cannot be picked up and instead must b
 Here is a rough estimate of Timberbark produce in a season. [Spreadsheet](https://docs.google.com/spreadsheets/d/13k0kkcyTUVJseXhAiZoKnOVubqOB7M9F3xILHV-Sj54/edit#gid=549968683) can be accessed and used in case player wish to change the default produce quantity. To edit the spreadsheet, copy the file to your Google account.
 
 | Resource | Timberbark Pile | Large Timberbark Pile |
-| -------- | --------------: | --------------------: |
+| -------- | --------------- | --------------------- |
 | Sap | 140 | 196 |
 | Moss | 56 | 112 |
 | | | |

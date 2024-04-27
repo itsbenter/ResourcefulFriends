@@ -26,7 +26,7 @@ Petalkin who eat every day mature after 5 nights have passed. A mature and fed P
 Forage Patch cannot be picked up and instead must be destroyed using scythe, giving 12 foraging experience. Quality of forages is affected by Foraging skill, the same as if player were gathering forages. The quantity of forages produced has 20% chance to double when player has [Gatherer](https://stardewvalleywiki.com/Skills#Foraging) profession. The quality of forages produced will be Iridium quality when player has [Botanist](https://stardewvalleywiki.com/Skills#Foraging) profession.
 
 | Resource | Min | Max | Avg |
-| -------- | --: | --: | --: |
+| -------- | --- | --- | --- |
 | Mixed Seeds | 1 | 3 | 2 |
 | | | | |
 | Common Forages | | | 7 |
@@ -58,7 +58,7 @@ When Forage Patch is destroyed, it will always produce 2 types of Common Forages
 Here is a rough estimate of Petalkin produce in a season. [Spreadsheet](https://docs.google.com/spreadsheets/d/13k0kkcyTUVJseXhAiZoKnOVubqOB7M9F3xILHV-Sj54/edit#gid=549968683) can be accessed and used in case player wish to change the default produce quantity. To edit the spreadsheet, copy the file to your Google account.
 
 | Resource | Days to produce: 3 | Days to produce: 2 |
-| -------- | -----------------: | -----------------: |
+| -------- | ------------------ | ------------------ |
 | Mixed Seeds | 18 | 28 |
 | | | |
 | Common Forages | 63 | 98 |
