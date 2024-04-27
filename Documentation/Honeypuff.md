@@ -1,6 +1,15 @@
 # Honeypuff
 
+> "The puff produces its own honey"
+
 Honeypuff is a farm animal that lives in a Coop. It can be purchased at Marnie's Ranch for 1250G. Honeypuff can become pregnant and give birth.
+
+## Contents
+
+* [Variation](#variation)
+* [Produce](#produce)
+  * [Calculation](#calculation)
+* [Configuration](#configuration)
 
 ## Variation
 

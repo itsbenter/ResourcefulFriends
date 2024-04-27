@@ -1,10 +1,19 @@
 # Petalkin
 
+> "Grows in-season forages on its back"
+
 Petalkin is a farm animal that lives in a Barn. It can be purchased at Marnie's Ranch for 2000G. Petalkin can become pregnant and give birth.
 
-## Seasonal Apperance
+* [Seasonal Appearance](#seasonal-appearance)
+* [Produce](#produce)
+  * [Forage Grouping](#forage-grouping)
+  * [Estimation](#estimation)
+  * [Auto Grabber Interaction](#auto-grabber-interaction)
+* [Configuration](#configuration)
 
-Petalkin appearance change based on the season. It also have specific look if player use mod to place Petalkin in Ginger Island.
+## Seasonal Appearance
+
+Petalkin appearance change based on the season. It also have unique appearance if player use mod to place Petalkin in Ginger Island.
 
 ![Petalkin_Variations](Animals/Petalkin_Variations.png)
 
@@ -14,7 +23,7 @@ Petalkin who eat every day mature after 5 nights have passed. A mature and fed P
 
 ![Petalkin_Produces](Animals/Petalkin_Produces.png)
 
-Forage Patch cannot be picked up and instead must be destroyed using scythe, giving 12 foraging experience. Quality of forages is the same as if player were gathering forages, affected by Foraging skill. The number of forages produced when destroying Forage Patch has 20% chance to double when player has [Gatherer](https://stardewvalleywiki.com/Skills#Foraging) profession. The quality of forages produced will be Iridium quality when player has [Botanist](https://stardewvalleywiki.com/Skills#Foraging) profession.
+Forage Patch cannot be picked up and instead must be destroyed using scythe, giving 12 foraging experience. Quality of forages is affected by Foraging skill, the same as if player were gathering forages. The quantity of forages produced has 20% chance to double when player has [Gatherer](https://stardewvalleywiki.com/Skills#Foraging) profession. The quality of forages produced will be Iridium quality when player has [Botanist](https://stardewvalleywiki.com/Skills#Foraging) profession.
 
 | Resource | Min | Max | Avg |
 | -------- | --- | --- | --- |
@@ -34,7 +43,7 @@ Forage Patch cannot be picked up and instead must be destroyed using scythe, giv
 
 ### Forage Grouping
 
-When Forage Patch is destroyed, it will always produce 2 types of Common Forages with stack size betweem 2 to 5. Forages in the same rarity category have equal chance to be produced. There is no Rare Forages in the mod, but other mod authors can add to the pool, refer to [Compatibility](Compatibility.md).
+When Forage Patch is destroyed, it will always produce 2 types of Common Forages with stack size between 2 to 5. Forages in the same rarity category have equal chance to be produced. There is no Rare Forages, but other mod authors can add to the pool. Refer to [Compatibility](Compatibility.md).
 
 | Context | Common Forages | Uncommon Forages | Rare Forages |
 | ------- | -------------- | ---------------- | ------------ |
@@ -65,10 +74,10 @@ Here is a rough estimate of Petalkin produce in a season. [Spreadsheet](https://
 
 If Auto Grabber is placed inside Barn, Forage Patch will be picked up by Auto Grabber. Player can then grab the Forage Patch to the inventory, place them on the ground, and destroy them using scythe to get the resources.
 
-Adding patch to process the item with machine to run fully automated farm when using [Automate](https://www.nexusmods.com/stardewvalley/mods/1063) is in to-do-list for future update of this mod.
+Adding patch to process produce using machine is in to-do-list for future update of this mod. This would allow a fully automated farm when using [Automate](https://www.nexusmods.com/stardewvalley/mods/1063).
 
 ## Configuration
 
 ## Footnote
 <a name="Salmonberry">1</a>: Only during Salmonberry season (15 - 18 Spring)<br>
-<a name="Gatherer">2</a>: 20% chance to double the stack size when has Gatherer profession<br>
+<a name="Gatherer">2</a>: 20% chance to double the stack size when having Gatherer profession<br>

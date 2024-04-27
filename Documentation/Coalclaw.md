@@ -1,6 +1,16 @@
 # Coalclaw
 
+> Well cared adults will gather coal clumps!
+
 Coalclaw is a farm animal that lives in a Coop. It can be purchased at Marnie's Ranch for 550G or hatched by placing a Coalclaw Egg into an Incubator, taking 4,500m (2d 21h 40m) to incubate.
+
+## Contents
+
+* [Variation](#variation)
+* [Produce](#produce)
+  * [Estimation](#estimation)
+  * [Auto Grabber Interaction](#auto-grabber-interaction)
+* [Configuration](#configuration)
 
 ## Variation
 
@@ -44,7 +54,7 @@ Here is a rough estimate of Coalclaw produce in a season. A number between 2 pro
 
 If Auto Grabber is placed inside Coop and Coalclaw produce inside the Coop (using appropriate config), Coalclaw Clump and Large Coalclaw Clump will be picked up by Auto Grabber. Player can then grab the clumps to the inventory, place them on the ground, and destroy them using pickaxe to get the resources.
 
-Adding patch to process the item with machine to run fully automated farm when using [Automate](https://www.nexusmods.com/stardewvalley/mods/1063) is in to-do-list for future update of this mod.
+Adding patch to process produce using machine is in to-do-list for future update of this mod. This would allow a fully automated farm when using [Automate](https://www.nexusmods.com/stardewvalley/mods/1063).
 
 ## Configuration
 

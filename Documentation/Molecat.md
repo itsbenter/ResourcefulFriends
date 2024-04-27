@@ -1,6 +1,14 @@
 # Molecat
 
+> "Digs up mining nodes when roam freely"
+
 Molecat is a farm animal that lives in a Coop. It can be purchased at Marnie's Ranch for 1100G. Molecat can become pregnant and give birth.
+
+* [Variation](#variation)
+* [Produce](#produce)
+  * [Estimation](#estimation)
+  * [Auto Grabber Interaction](#auto-grabber-interaction)
+* [Configuration](#configuration)
 
 ## Variation
 
@@ -47,7 +55,7 @@ Here is a rough estimate of Molecat produce in a season. A number between 2 prod
 
 If Auto Grabber is placed inside Coop and Molecat produce inside the Coop (using appropriate config), Molecat Node will be picked up by Auto Grabber. Player can then grab the Node to the inventory, place them on the ground, and destroy them using pickaxe to get the resources.
 
-Adding patch to process the item with machine to run fully automated farm when using [Automate](https://www.nexusmods.com/stardewvalley/mods/1063) is in to-do-list for future update of this mod.
+Adding patch to process produce using machine is in to-do-list for future update of this mod. This would allow a fully automated farm when using [Automate](https://www.nexusmods.com/stardewvalley/mods/1063).
 
 ## Configuration
 

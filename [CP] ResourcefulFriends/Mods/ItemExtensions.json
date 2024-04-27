@@ -160,7 +160,7 @@
                     ],
                     "SecretNotes": false,
                     "Exp": 5,
-                    "Skill": "forage",
+                    "Skill": "foraging",
                     "CountTowards": "Stumps",
                     "Debris": "wood",
                     "ContextTags": [
@@ -242,7 +242,7 @@
                     ],
                     "SecretNotes": false,
                     "Exp": 5,
-                    "Skill": "forage",
+                    "Skill": "foraging",
                     "CountTowards": "Stumps",
                     "Debris": "wood",
                     "ContextTags": [
@@ -390,7 +390,7 @@
                     ],
                     "SecretNotes": false,
                     "Exp": 12,
-                    "Skill": "forage",
+                    "Skill": "foraging",
                     "ContextTags": [
                         "color_green",
                         "season_spring",
@@ -536,7 +536,7 @@
                     ],
                     "SecretNotes": false,
                     "Exp": 12,
-                    "Skill": "forage",
+                    "Skill": "foraging",
                     "ContextTags": [
                         "color_green",
                         "season_summer",
@@ -682,7 +682,7 @@
                     ],
                     "SecretNotes": false,
                     "Exp": 12,
-                    "Skill": "forage",
+                    "Skill": "foraging",
                     "ContextTags": [
                         "color_orange",
                         "season_fall",
@@ -828,7 +828,7 @@
                     ],
                     "SecretNotes": false,
                     "Exp": 12,
-                    "Skill": "forage",
+                    "Skill": "foraging",
                     "ContextTags": [
                         "color_blue",
                         "season_winter",
@@ -974,7 +974,7 @@
                     ],
                     "SecretNotes": false,
                     "Exp": 12,
-                    "Skill": "forage",
+                    "Skill": "foraging",
                     "ContextTags": [
                         "color_green",
                         "season_summer",
