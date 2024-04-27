@@ -28,7 +28,7 @@ Honeypuffs who eat every day mature after 3 nights have passed. A mature and fed
 Here is a calculation of Honeypuff produce in a season. [Spreadsheet](https://docs.google.com/spreadsheets/d/13k0kkcyTUVJseXhAiZoKnOVubqOB7M9F3xILHV-Sj54/edit#gid=549968683) can be accessed and used in case player wish to change the days for produce. To edit the spreadsheet, copy the file to your Google account.
 
 | Resource | Days to produce: 2 | Days to produce: 1 |
-| -------- | ------------------ | ------------------ |
+| -------- | -----------------: | -----------------: |
 | Honey | 14 | 28 |
 
 ## Configuration

@@ -25,12 +25,12 @@ Molecat who eat every day mature after 3 nights have passed. A mature and fed Mo
 Molecat Node cannot be picked up and instead must be destroyed using pickaxe, giving 20 mining experience. The number of ores produced when destroying the Node is increased by +1 per type of ore when player has [Miner](https://stardewvalleywiki.com/Skills#Mining) profession.
 
 | Resource | Min | Max | Avg |
-| -------- | --- | --- | --- |
+| -------- | --: | --: | --: |
 | Stone | 2 | 3 | 2.5 |
 | | | | |
 | Common Ores (copper, iron, gold) | | | 6 |
 | *Type of ore* | 2 | 2 | 2 |
-| *Stack size per ore* | 2 | 4 | 3 |
+| *Stack size per ore type* | 2 | 4 | 3 |
 | | | | |
 | Iridium Ore | 1 | 2 | 1.5 |
 
@@ -41,7 +41,7 @@ The condition to produce Molecat Node is the same to Pig producing Truffles. Ref
 Here is a rough estimate of Molecat produce in a season. A number between 2 produce to 3 produce per day is probably a reasonable estimate at max heart. [Spreadsheet](https://docs.google.com/spreadsheets/d/13k0kkcyTUVJseXhAiZoKnOVubqOB7M9F3xILHV-Sj54/edit#gid=549968683) can be accessed and used in case player wish to change the default produce quantity. To edit the spreadsheet, copy the file to your Google account.
 
 | Resource | Produce per day: 1 | Produce per day: 2 | Produce per day: 3 |
-| -------- | ------------------ | ------------------ | ------------------ |
+| -------- | -----------------: | -----------------: | -----------------: |
 | Stone | 70 | 140 | 210 |
 | | | | |
 | Common Ores (copper, iron, gold) | 168 | 336 | 504 |

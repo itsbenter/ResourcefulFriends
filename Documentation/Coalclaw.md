@@ -27,7 +27,7 @@ Coalclaws who eat every day mature after 2 nights have passed. A mature and fed 
 Coalclaw Clump and Large Coalclaw Clump cannot be picked up and instead must be destroyed using pickaxe, giving 5 and 7 mining experience respectively. The number of coal produced when destroying the clump is increased by 50% when player has [Prospector](https://stardewvalleywiki.com/Skills#Mining) profession.
 
 | Resource | Min | Max | Avg |
-| -------- | --- | --- | --- |
+| -------- | --: | --: | --: |
 | **Coalclaw Clump** | | | |
 | Coal | 4 | 6 | 5 |
 | | | | |
@@ -41,7 +41,7 @@ The condition to produce Coalclaw Clump is the same to Pig producing Truffles. R
 Here is a rough estimate of Coalclaw produce in a season. A number between 2 produce to 3 produce per day is probably a reasonable estimate at max heart. [Spreadsheet](https://docs.google.com/spreadsheets/d/13k0kkcyTUVJseXhAiZoKnOVubqOB7M9F3xILHV-Sj54/edit#gid=549968683) can be accessed and used in case player wish to change the default produce quantity. To edit the spreadsheet, copy the file to your Google account.
 
 | Resource | Produce per day: 1 | Produce per day: 2 | Produce per day: 3 |
-| -------- | ------------------ | ------------------ | ------------------ |
+| -------- | -----------------: | -----------------: | -----------------: |
 | **Coalclaw Clump** | | | |
 | Coal | 140 | 280 | 420 |
 | *With Prospector profession*<sup>[1](#LargeCoalclawClump)</sup> | 210 | 420 | 630 |

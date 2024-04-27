@@ -29,13 +29,13 @@ Details of the config options is shown when hovered over in [Generic Mod Config 
 
 In version 1.0.0, this mod have five farm animals. They mostly produce existing resources that not obtainable through existing farm animals. Effectively enabling a steady supply of the resources. Three of the farm animals are meant for Coop and two are meant for Barn.
 
-| Farm Animal | Purchase Price | Resources Produced | Building |
-| :---------: | -------------- | ------------------ | -------- |
-|![Coalclaw](Documentation/ShopTexture/Coalclaw.png)<br>[Coalclaw](Documentation/Coalclaw.md) | 550G | Coal<br>Coalclaw egg | Coop |
-|![Honeypuff](Documentation/ShopTexture/Honeypuff.png)<br>[Honeypuff](Documentation/Honeypuff.md) | 1250G | Honey | Coop |
-|![Molecat](Documentation/ShopTexture/Molecat.png)<br>[Molecat](Documentation/Molecat.md) | 1100G | Stone<br>Copper ore<br>Iron ore<br>Gold ore<br>Iridium ore | Coop |
-|![Petalkin](Documentation/ShopTexture/Petalkin.png)<br>[Petalkin](Documentation/Petalkin.md) | 2000G | Mixed seeds<br>In-season forages | Barn |
-|![Timberbark](Documentation/ShopTexture/Timberbark.png)<br>[Timberbark](Documentation/Timberbark.md) | 2000G | Wood<br>Hardwood<br>Moss<br>Sap | Barn |
+| Farm Animal | Purchase Price | Resources Produced | Building | Days to Mature |
+| :---------: | -------------: | ------------------ | -------- | -------------: |
+|![Coalclaw](Documentation/ShopTexture/Coalclaw.png)<br>[Coalclaw](Documentation/Coalclaw.md) | 550G | Coal<br>Coalclaw egg | Coop | 2 |
+|![Honeypuff](Documentation/ShopTexture/Honeypuff.png)<br>[Honeypuff](Documentation/Honeypuff.md) | 1250G | Honey | Coop | 3 |
+|![Molecat](Documentation/ShopTexture/Molecat.png)<br>[Molecat](Documentation/Molecat.md) | 1100G | Stone<br>Copper ore<br>Iron ore<br>Gold ore<br>Iridium ore | Coop | 3 |
+|![Petalkin](Documentation/ShopTexture/Petalkin.png)<br>[Petalkin](Documentation/Petalkin.md) | 2000G | Mixed seeds<br>In-season forages | Barn | 5 |
+|![Timberbark](Documentation/ShopTexture/Timberbark.png)<br>[Timberbark](Documentation/Timberbark.md) | 2000G | Wood<br>Hardwood<br>Moss<br>Sap | Barn | 3 |
 
 ## Objects
 
