@@ -2,8 +2,8 @@
    "$schema": "https://smapi.io/schemas/manifest.json",
    "Name": "Resourceful Friends",
    "Author": "ItsBenter",
-   "Version": "1.0.0",
-   "Description": "Adds five new farm animals and an object for fish pond. New ways to make resources!",
+   "Version": "0.0.0",
+   "Description": "Adds five new farm animals and an object for fish pond. Expanding ways to obtain resources in-game.",
    "UniqueID": "ItsBenter.ResourcefulFriends.CP",
    "MinimumApiVersion": "4.0.0",
    "UpdateKeys": [

@@ -13,12 +13,6 @@ When placed in Fish Pond Jellomone produce jellies with the quantity based on th
 
 | Item(s) Produced | Population | Quantity |
 | ---------------- | ---------- | -------- |
-| Sea Jellies | 1 - 4 | 1 |
-| Sea Jellies | 5 - 8 | 2 |
-| Sea Jellies | 9 - 10 | 3 |
-| River Jellies | 1 - 4 | 1 |
-| River Jellies | 5 - 8 | 2 |
-| River Jellies | 9 - 10 | 3 |
-| Cave Jellies | 1 - 4 | 1 |
-| Cave Jellies | 5 - 8 | 2 |
-| Cave Jellies | 9 - 10 | 3 |
+| Sea Jellies, River Jellies, or Cave Jellies | 1 - 4 | 2 |
+| Sea Jellies, River Jellies, or Cave Jellies | 5 - 8 | 3 - 4 |
+| Sea Jellies, River Jellies, or Cave Jellies | 9 - 10 | 6 - 8 |
