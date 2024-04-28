@@ -8,7 +8,7 @@ This page includes compatibility patches and pointers to make compatibility for 
 
 ## Petalkin
 
-In concept Petalkin appearances would chane based on the forages in the area. This means mod that adds ability to build Barn in area with distinct forages should get a compatibility patch. So far two mods has been identified.
+In concept Petalkin appearances would change based on the forages in the area. Mods that add ability to build Barn in area with distinct forages should get a compatibility patch. So far two mods have been identified.
 
 1. [Visit Mount Vapius](https://www.nexusmods.com/stardewvalley/mods/9600)
 2. [Ridgeside Village](https://www.nexusmods.com/stardewvalley/mods/7286)
