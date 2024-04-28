@@ -1,6 +1,6 @@
 # Timberbark
 
-> "Drops woods and place them in neat piles"
+> *"Drops woods and place them in neat piles"*
 
 ![Timberbark_Variations](Animals/Timberbark_Variations.png)
 

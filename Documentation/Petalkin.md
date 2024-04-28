@@ -1,6 +1,6 @@
 # Petalkin
 
-> "Grows in-season forages on its back"
+> *"Grows in-season forages on its back"*
 
 Petalkin is a farm animal that lives in a Barn. It can be purchased at Marnie's Ranch for 2000G. Petalkin can become pregnant and give birth.
 
@@ -25,6 +25,8 @@ Petalkin who eat every day mature after 5 nights have passed. A mature and fed P
 
 Forage Patch cannot be picked up and instead must be destroyed using scythe, giving 12 foraging experience. Quality of forages is affected by Foraging skill, the same as if player were gathering forages. The quantity of forages produced has 20% chance to double when player has [Gatherer](https://stardewvalleywiki.com/Skills#Foraging) profession. The quality of forages produced will be Iridium quality when player has [Botanist](https://stardewvalleywiki.com/Skills#Foraging) profession.
 
+When Forage Patch is destroyed, it will produce 2 types of Common Forages with stack size between 2 to 5. It has 75% chance to produce 1 type of Uncommon Forages with a stack size between 1 to 2. And 20% chance to produce 1 type of Rare Forages with a stack size of 1.
+
 | Resource | Min | Max | Avg |
 | -------- | --- | --- | --- |
 | Mixed Seeds | 1 | 3 | 2 |
@@ -43,15 +45,15 @@ Forage Patch cannot be picked up and instead must be destroyed using scythe, giv
 
 ### Forage Grouping
 
-When Forage Patch is destroyed, it will always produce 2 types of Common Forages with stack size between 2 to 5. Forages in the same rarity category have equal chance to be produced. There is no Rare Forages, but other mod authors can add to the pool. Refer to [Compatibility](Compatibility.md).
+Forages in the same rarity category have equal chance to be produced. Mod authors can add to the pool. Refer to [Compatibility](Compatibility.md).
 
 | Context | Common Forages | Uncommon Forages | Rare Forages |
 | ------- | -------------- | ---------------- | ------------ |
 | Spring | Dandelion, Daffodil, Wild Horseradish, Leek, Spring Onion, Salmonberry<sup>[1](#Salmonberru)</sup> | Common Mushroom, Morel | |
 | Summer | Sweet Pea, Spice Berry, Grape | Red Mushroom, Fiddlehead Fern | |
-| Fall | Common Mushroom, Blackberry, Wild Plum, Hazelnut | Red Mushroom, Chanterelle, Purple Mushroom | |
+| Fall | Common Mushroom, Blackberry, Wild Plum, Hazelnut | Red Mushroom, Chanterelle, Purple Mushroom | Sweet Gem Berry |
 | Winter | Crocus, Holly, Crystal Fruit | Winter Root, Snow Yam | |
-| Ginger Island | Ginger, Fiddlehead Fern, Taro Tuber | |
+| Ginger Island | Ginger, Fiddlehead Fern, Taro Tuber | | |
 
 ### Estimation
 

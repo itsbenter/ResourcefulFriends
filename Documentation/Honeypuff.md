@@ -1,6 +1,6 @@
 # Honeypuff
 
-> "The puff produces its own honey"
+> *"The puff produces its own honey"*
 
 Honeypuff is a farm animal that lives in a Coop. It can be purchased at Marnie's Ranch for 1250G. Honeypuff can become pregnant and give birth.
 
@@ -19,7 +19,7 @@ There are four variations of Honeypuff. When purchasing from Marnie there is equ
 
 ## Produce
 
-Honeypuffs who eat every day mature after 3 nights have passed. A mature and fed Honeypuff will produce Honey every other day. 
+Honeypuffs who eat every day mature after 3 nights have passed. A mature and fed Honeypuff will produce Honey every other day. Once 4 hearts friendship is reached, Honeypuff will produce Honey every day.
 
 ![Honeypuff_Produces](Animals/Honeypuff_Produces.png)
 

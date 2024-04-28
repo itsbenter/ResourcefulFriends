@@ -1,6 +1,6 @@
 # Molecat
 
-> "Digs up mining nodes when roam freely"
+> *"Digs up mining nodes when roam freely"*
 
 Molecat is a farm animal that lives in a Coop. It can be purchased at Marnie's Ranch for 1100G. Molecat can become pregnant and give birth.
 

@@ -1,6 +1,6 @@
 # Coalclaw
 
-> Well cared adults will gather coal clumps!
+> *"Well cared adults will gather coal clumps!"*
 
 Coalclaw is a farm animal that lives in a Coop. It can be purchased at Marnie's Ranch for 550G or hatched by placing a Coalclaw Egg into an Incubator, taking 4,500m (2d 21h 40m) to incubate.
 
@@ -24,7 +24,7 @@ Coalclaws who eat every day mature after 2 nights have passed. A mature and fed 
 
 ![Coalclaw_Produces](Animals/Coalclaw_Produces.png)
 
-Coalclaw Clump and Large Coalclaw Clump cannot be picked up and instead must be destroyed using pickaxe, giving 5 and 7 mining experience respectively. The number of coal produced when destroying the clump is increased by 50% when player has [Prospector](https://stardewvalleywiki.com/Skills#Mining) profession.
+Coalclaw Clump and Large Coalclaw Clump cannot be picked up and instead must be destroyed using pickaxe, giving 7 mining experience. The number of coal produced when destroying the clump is increased by 50% when player has [Prospector](https://stardewvalleywiki.com/Skills#Mining) profession.
 
 | Resource | Min | Max | Avg |
 | -------- | --- | --- | --- |
