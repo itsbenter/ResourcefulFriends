@@ -20,7 +20,7 @@ There are two variations of Coalclaw. When purchasing from Marnie there is equal
 
 ## Produce
 
-Coalclaws who eat every day mature after 2 nights have passed. A mature and fed Coalclaw will produce Coalclaw Clump every day, if the conditions are met. Once sufficient friendship and happiness is reached, Coalclaw has a chance to produce a Large Coalclaw Clump.
+Coalclaws who eat every day mature after 2 nights have passed. A mature and fed Coalclaw will produce Coalclaw Clump every day, if the conditions are met. Once sufficient friendship and happiness is reached, Coalclaw has a chance to produce a Large Coalclaw Clump and an even smaller chance to produce Coalclaw Egg. Coalclaw Egg can be sold at base price of 95G or incubated to hatch a Coalclaw baby.
 
 ![Coalclaw_Produces](Animals/Coalclaw_Produces.png)
 

@@ -152,7 +152,7 @@
       "Section": "ForagePatch"
     },
     "ForagePatch_MixedSeeds_MaxDrops": {
-      "Default": "1",
+      "Default": "3",
       "Section": "ForagePatch"
     },
     "ForagePatch_ForagingExperience": {

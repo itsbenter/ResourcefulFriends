@@ -2,7 +2,7 @@
 
 > *"Grows in-season forages on its back"*
 
-Petalkin is a farm animal that lives in a Barn. It can be purchased at Marnie's Ranch for 2000G. Petalkin can become pregnant and give birth.
+Petalkin is a farm animal that lives in a Barn. It can be purchased at Marnie's Ranch for 4500G. Petalkin can become pregnant and give birth.
 
 * [Seasonal Appearance](#seasonal-appearance)
 * [Produce](#produce)

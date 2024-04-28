@@ -34,7 +34,7 @@
   "Petalkin_DaysToMature": "5",
   "Petalkin_DaysToProduce": "3",
   "ForagePatch_MixedSeeds_MinDrops": "1",
-  "ForagePatch_MixedSeeds_MaxDrops": "1",
+  "ForagePatch_MixedSeeds_MaxDrops": "3",
   "ForagePatch_ForagingExperience": "12",
   "ForagePatch_Common_MinForageType": "2",
   "ForagePatch_Common_MaxForageType": "2",

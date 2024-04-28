@@ -8,74 +8,78 @@
                 "ItsBenter.ResourcefulFriends.Jellomone": {
                     "Id": "ItsBenter.ResourcefulFriends.Jellomone",
                     "RequiredTags": [
-                        "id_o_itsbenter.resourcefulfriends.jellomone"
+                        "item_jellomone"
                     ],
                     "Precedence": 0,
-                    "SpawnTime": 2,
+                    "SpawnTime": 5,
                     "ProducedItems": [
                         {
                             "RequiredPopulation": 9,
-                            "Chance": 0.06,
-                            "ItemId": "(O)543",
-                            "MinQuantity": 1,
-                            "MaxQuantity": 1
+                            "ItemId": "(O)SeaJelly",
+                            "Chance": 0.8,
+                            "MinQuantity": 3,
+                            "MaxQuantity": 3,
                         },
                         {
                             "RequiredPopulation": 9,
-                            "Chance": 0.06,
-                            "ItemId": "(O)571",
+                            "ItemId": "(O)RiverJelly",
+                            "Chance": 0.8,
+                            "MinQuantity": 3,
+                            "MaxQuantity": 3,
+                        },
+                        {
+                            "RequiredPopulation": 9,
+                            "ItemId": "(O)CaveJelly",
+                            "Chance": 0.8,
+                            "MinQuantity": 3,
+                            "MaxQuantity": 3,
+                        },
+                        {
+                            "RequiredPopulation": 5,
+                            "ItemId": "(O)SeaJelly",
+                            "Chance": 0.8,
+                            "MinQuantity": 2,
+                            "MaxQuantity": 2,
+                        },
+                        {
+                            "RequiredPopulation": 5,
+                            "ItemId": "(O)RiverJelly",
+                            "Chance": 0.8,
+                            "MinQuantity": 2,
+                            "MaxQuantity": 2,
+                        },
+                        {
+                            "RequiredPopulation": 5,
+                            "ItemId": "(O)CaveJelly",
+                            "Chance": 0.8,
+                            "MinQuantity": 2,
+                            "MaxQuantity": 2,
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "ItemId": "(O)SeaJelly",
+                            "Chance": 0.8,
                             "MinQuantity": 1,
-                            "MaxQuantity": 1
+                            "MaxQuantity": 1,
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "ItemId": "(O)RiverJelly",
+                            "Chance": 0.8,
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1,
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "ItemId": "(O)CaveJelly",
+                            "Chance": 0.8,
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1,
                         }
                     ],
                     "PopulationGates": null,
                     "CustomFields": null
-                },
-                /*"Id": "ItsBenter.ResourcefulFriends.Jellomone",
-                    "RequiredTags": [
-                        "itsbenter_timberbarkpile"
-                    ],
-                    "Precedence": 0,
-                    "SpawnTime": -1,
-                    "ProducedItems": [
-                        {
-                            "RequiredPopulation": 9,
-                            "RandomItemId": [
-                                "(O)SeaJelly",
-                                "(O)RiverJelly",
-                                "(O)CaveJelly",
-                            ],
-                            "MinQuantity": 3,
-                            "MaxQuantity": 3,
-                            "Chance": 0.5
-                        },
-                        {
-                            "RequiredPopulation": 5,
-                            "RandomItemId": [
-                                "(O)SeaJelly",
-                                "(O)RiverJelly",
-                                "(O)CaveJelly",
-                            ],
-                            "MinQuantity": 2,
-                            "MaxQuantity": 2,
-                            "Chance": 0.5
-                        },
-                        {
-                            "RequiredPopulation": 1,
-                            "RandomItemId": [
-                                "(O)SeaJelly",
-                                "(O)RiverJelly",
-                                "(O)CaveJelly",
-                            ],
-                            "MinQuantity": 1,
-                            "MaxQuantity": 1,
-                            "Chance": 0.5
-                        }
-                    ],
-                    "PopulationGates": {},
-                    "CustomFields": null
-                    
-            },*/
+                }
             }
         }
     ]

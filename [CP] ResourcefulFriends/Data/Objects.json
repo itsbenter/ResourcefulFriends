@@ -10,12 +10,13 @@
                     "DisplayName": "{{i18n:Jellomone_DisplayName}}",
                     "Description": "{{i18n:Jellomone_Description}}",
                     "Type": "Basic",
-                    "Category": -23,
+                    "Category": -4,
                     "Edibility": -300,
                     "Price": "{{Jellomone_Price}}",
                     "ContextTags": [
-                        "color_grey",
+                        "color_red",
                         "not_giftable",
+                        "category_fish"
                     ],
                     "Texture": "Mods/ItsBenter.ResourcefulFriends/TileSheets/Objects",
                     "SpriteIndex": 10,
