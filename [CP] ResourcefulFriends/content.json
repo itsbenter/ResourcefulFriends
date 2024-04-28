@@ -7,22 +7,18 @@
       "Default": "true",
       "Section": "Coalclaw"
     },
-    "CoalclawProduceOnWinter": {
+    "Coalclaw_ProduceOnWinter": {
       "AllowValues": "true, false",
       "Default": "true",
       "Section": "Coalclaw"
     },
-    "CoalclawProduceOnRainyDays": {
+    "Coalclaw_ProduceOnRainyDays": {
       "AllowValues": "true, false",
       "Default": "true",
       "Section": "Coalclaw"
     },
     "Coalclaw_PurchasePrice": {
       "Default": "550",
-      "Section": "Coalclaw"
-    },
-    "Coalclaw_SellPrice": {
-      "Default": "1100",
       "Section": "Coalclaw"
     },
     "Coalclaw_DaysToMature": {
@@ -54,10 +50,6 @@
       "Default": "1250",
       "Section": "Honeypuff"
     },
-    "Honeypuff_SellPrice": {
-      "Default": "2500",
-      "Section": "Honeypuff"
-    },
     "Honeypuff_DaysToMature": {
       "Default": "3",
       "Section": "Honeypuff"
@@ -72,8 +64,7 @@
       "Section": "Jellomone"
     },
     "Jellomone_Price": {
-      "AllowValues": "550",
-      "Default": "true",
+      "Default": "550",
       "Section": "Jellomone"
     },
     "Molecat_Enabled": {
@@ -83,10 +74,6 @@
     },
     "Molecat_PurchasePrice": {
       "Default": "1100",
-      "Section": "Molecat"
-    },
-    "Molecat_SellPrice": {
-      "Default": "2200",
       "Section": "Molecat"
     },
     "Molecat_DaysToMature": {
@@ -111,6 +98,18 @@
       "Default": "3",
       "Section": "MolecatNode"
     },
+    "MolecatNode_IridiumOre_Chance": {
+      "Default": "0.33",
+      "Section": "MolecatNode"
+    },
+    "MolecatNode_IridiumOre_MinDrops": {
+      "Default": "1",
+      "Section": "MolecatNode"
+    },
+    "MolecatNode_IridiumOre_MaxDrops": {
+      "Default": "2",
+      "Section": "MolecatNode"
+    },
     "MolecatNode_Common_MinOreType": {
       "Default": "2",
       "Section": "MolecatNode"
@@ -127,18 +126,6 @@
       "Default": "4",
       "Section": "MolecatNode"
     },
-    "MolecatNode_IridiumOre_Chance": {
-      "Default": "0.33",
-      "Section": "MolecatNode"
-    },
-    "MolecatNode_IridiumOre_MinDrops": {
-      "Default": "1",
-      "Section": "MolecatNode"
-    },
-    "MolecatNode_IridiumOre_MaxDrops": {
-      "Default": "2",
-      "Section": "MolecatNode"
-    },
     "MolecatNode_MiningExperience": {
       "Default": "20",
       "Section": "MolecatNode"
@@ -150,10 +137,6 @@
     },
     "Petalkin_PurchasePrice": {
       "Default": "2000",
-      "Section": "Petalkin"
-    },
-    "Petalkin_SellPrice": {
-      "Default": "4000",
       "Section": "Petalkin"
     },
     "Petalkin_DaysToMature": {
@@ -172,65 +155,65 @@
       "Default": "1",
       "Section": "ForagePatch"
     },
-    "ForagePatch_Common_MinForageType": {
-      "Default": "2",
-      "Section": "ForagePatch"
-    },
-    "ForagePatch_Common_MaxForageType": {
-      "Default": "2",
-      "Section": "ForagePatch"
-    },
-    "ForagePatch_Common_MinDropsPerForageType": {
-      "Default": "2",
-      "Section": "ForagePatch"
-    },
-    "ForagePatch_Common_MaxDropsPerForageType": {
-      "Default": "5",
-      "Section": "ForagePatch"
-    },
-    "ForagePatch_Uncommon_Chance": {
-      "Default": "0.75",
-      "Section": "ForagePatch"
-    },
-    "ForagePatch_Uncommon_MinForageType": {
-      "Default": "1",
-      "Section": "ForagePatch"
-    },
-    "ForagePatch_Uncommon_MaxForageType": {
-      "Default": "1",
-      "Section": "ForagePatch"
-    },
-    "ForagePatch_Uncommon_MinDropsPerForageType": {
-      "Default": "1",
-      "Section": "ForagePatch"
-    },
-    "ForagePatch_Uncommon_MaxDropsPerForageType": {
-      "Default": "2",
-      "Section": "ForagePatch"
-    },
-    "ForagePatch_Rare_Chance": {
-      "Default": "0.2",
-      "Section": "ForagePatch"
-    },
-    "ForagePatch_Rare_MinForageType": {
-      "Default": "1",
-      "Section": "ForagePatch"
-    },
-    "ForagePatch_Rare_MaxForageType": {
-      "Default": "1",
-      "Section": "ForagePatch"
-    },
-    "ForagePatch_Rare_MinDropsPerForageType": {
-      "Default": "1",
-      "Section": "ForagePatch"
-    },
-    "ForagePatch_Rare_MaxDropsPerForageType": {
-      "Default": "1",
-      "Section": "ForagePatch"
-    },
     "ForagePatch_ForagingExperience": {
       "Default": "12",
       "Section": "ForagePatch"
+    },
+    "ForagePatch_Common_MinForageType": {
+      "Default": "2",
+      "Section": "ForagePatch_CommonForage"
+    },
+    "ForagePatch_Common_MaxForageType": {
+      "Default": "2",
+      "Section": "ForagePatch_CommonForage"
+    },
+    "ForagePatch_Common_MinDropsPerForageType": {
+      "Default": "2",
+      "Section": "ForagePatch_CommonForage"
+    },
+    "ForagePatch_Common_MaxDropsPerForageType": {
+      "Default": "5",
+      "Section": "ForagePatch_CommonForage"
+    },
+    "ForagePatch_Uncommon_Chance": {
+      "Default": "0.75",
+      "Section": "ForagePatch_UncommonForage"
+    },
+    "ForagePatch_Uncommon_MinForageType": {
+      "Default": "1",
+      "Section": "ForagePatch_UncommonForage"
+    },
+    "ForagePatch_Uncommon_MaxForageType": {
+      "Default": "1",
+      "Section": "ForagePatch_UncommonForage"
+    },
+    "ForagePatch_Uncommon_MinDropsPerForageType": {
+      "Default": "1",
+      "Section": "ForagePatch_UncommonForage"
+    },
+    "ForagePatch_Uncommon_MaxDropsPerForageType": {
+      "Default": "2",
+      "Section": "ForagePatch_UncommonForage"
+    },
+    "ForagePatch_Rare_Chance": {
+      "Default": "0.2",
+      "Section": "ForagePatch_RareForage"
+    },
+    "ForagePatch_Rare_MinForageType": {
+      "Default": "1",
+      "Section": "ForagePatch_RareForage"
+    },
+    "ForagePatch_Rare_MaxForageType": {
+      "Default": "1",
+      "Section": "ForagePatch_RareForage"
+    },
+    "ForagePatch_Rare_MinDropsPerForageType": {
+      "Default": "1",
+      "Section": "ForagePatch_RareForage"
+    },
+    "ForagePatch_Rare_MaxDropsPerForageType": {
+      "Default": "1",
+      "Section": "ForagePatch_RareForage"
     },
     "Timberbark_Enabled": {
       "AllowValues": "true, false",
@@ -239,10 +222,6 @@
     },
     "Timberbark_PurchasePrice": {
       "Default": "2000",
-      "Section": "Timberbark"
-    },
-    "Timberbark_SellPrice": {
-      "Default": "4000",
       "Section": "Timberbark"
     },
     "Timberbark_DaysToMature": {
@@ -255,6 +234,14 @@
     },
     "TimberbarkPile_Sap_MaxDrops": {
       "Default": "5",
+      "Section": "TimberbarkPile"
+    },
+    "TimberbarkPile_Moss_MinDrops": {
+      "Default": "1",
+      "Section": "TimberbarkPile"
+    },
+    "TimberbarkPile_Moss_MaxDrops": {
+      "Default": "3",
       "Section": "TimberbarkPile"
     },
     "TimberbarkPile_Wood_MinDrops": {
@@ -271,14 +258,6 @@
     },
     "TimberbarkPile_Hardwood_MaxDrops": {
       "Default": "0",
-      "Section": "TimberbarkPile"
-    },
-    "TimberbarkPile_Moss_MinDrops": {
-      "Default": "1",
-      "Section": "TimberbarkPile"
-    },
-    "TimberbarkPile_Moss_MaxDrops": {
-      "Default": "3",
       "Section": "TimberbarkPile"
     },
     "TimberbarkPile_ForagingExperience": {
@@ -399,7 +378,7 @@
       "Value": "DropOvernight",
       "When": {
         "Season": "winter",
-        "CoalclawProduceOnWinter": true
+        "Coalclaw_ProduceOnWinter": true
       }
     },
     {
@@ -407,7 +386,7 @@
       "Value": "DropOvernight",
       "When": {
         "Weather": "Rain, Storm, GreenRain",
-        "CoalclawProduceOnRainyDays": true
+        "Coalclaw_ProduceOnRainyDays": true
       }
     },
     //Molecat

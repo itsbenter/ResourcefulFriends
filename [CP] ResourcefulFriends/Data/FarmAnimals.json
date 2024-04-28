@@ -13,7 +13,7 @@
                     "House": "Coop",
                     "Gender": "Female",
                     "PurchasePrice": "{{Coalclaw_PurchasePrice}}",
-                    "SellPrice": "{{Coalclaw_SellPrice}}",
+                    "SellPrice": "{{Query: {{Coalclaw_PurchasePrice}} * 2}}",
                     "ShopTexture": "Mods\\ItsBenter.ResourcefulFriends\\Animals\\ShopTexture",
                     "ShopSourceRect": {
                         "X": 64,
@@ -121,7 +121,7 @@
                     "House": "Coop",
                     "Gender": "MaleOrFemale",
                     "PurchasePrice": "{{Honeypuff_PurchasePrice}}",
-                    "SellPrice": "{{Honeypuff_SellPrice}}",
+                    "SellPrice": "{{Query: {{Honeypuff_PurchasePrice}} * 2}}",
                     "ShopTexture": "Mods\\ItsBenter.ResourcefulFriends\\Animals\\ShopTexture",
                     "ShopSourceRect": {
                         "X": 32,
@@ -214,8 +214,8 @@
                     "DisplayName": "{{i18n:Molecat_DisplayName}}",
                     "House": "Coop",
                     "Gender": "MaleOrFemale",
-                    "PurchasePrice": 1100,
-                    "SellPrice": 2200,
+                    "PurchasePrice": "{{Molecat_PurchasePrice}}",
+                    "SellPrice": "{{Query: {{Molecat_PurchasePrice}} * 2}}",
                     "ShopTexture": "Mods\\ItsBenter.ResourcefulFriends\\Animals\\ShopTexture",
                     "ShopSourceRect": {
                         "X": 0,
@@ -316,7 +316,7 @@
                     "House": "Barn",
                     "Gender": "MaleOrFemale",
                     "PurchasePrice": "{{Petalkin_PurchasePrice}}",
-                    "SellPrice": "{{Petalkin_SellPrice}}",
+                    "SellPrice": "{{Query: {{Petalkin_PurchasePrice}} * 2}}",
                     "ShopTexture": "Mods\\ItsBenter.ResourcefulFriends\\Animals\\ShopTexturePetalkin",
                     "ShopSourceRect": {
                         "X": 0,
@@ -426,7 +426,7 @@
                     "House": "Barn",
                     "Gender": "MaleOrFemale",
                     "PurchasePrice": "{{Timberbark_PurchasePrice}}",
-                    "SellPrice": "{{Timberbark_SellPrice}}",
+                    "SellPrice": "{{Query: {{Timberbark_PurchasePrice}} * 2}}",
                     "ShopTexture": "Mods\\ItsBenter.ResourcefulFriends\\Animals\\ShopTexture",
                     "ShopSourceRect": {
                         "X": 0,

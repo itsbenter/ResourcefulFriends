@@ -1,6 +1,6 @@
 # Resourceful Friends
 
-[Resourceful Friends](https://www.nexusmods.com/stardewvalley/mods/23227) adds new farm animals to the game.
+[Resourceful Friends](https://www.nexusmods.com/stardewvalley/mods/23227) adds new farm animals to the game. Expanding ways to obtain resources in-game.
 
 ## Contents
 
@@ -26,7 +26,7 @@ Details of the config options is shown when hovered over in [Generic Mod Config 
 
 ## Farm Animals
 
-In version 1.0.0, this mod have five farm animals. They mostly produce existing resources that not obtainable through existing farm animals. Effectively enabling a steady supply of the resources. Three of the farm animals are meant for Coop and two are meant for Barn.
+In version 1.0.0, this mod have five farm animals. They produce existing resources that not are obtainable through the farm animals. Effectively enabling a steady supply. Three of the farm animals are meant for Coop and two are meant for Barn.
 
 | Farm Animal | Purchase Price | Resources Produced | Building | Days to Mature |
 | :---------: | -------------- | ------------------ | -------- | -------------- |
