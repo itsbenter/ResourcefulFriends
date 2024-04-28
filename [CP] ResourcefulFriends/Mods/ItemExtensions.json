@@ -271,7 +271,7 @@
                     "MinToolLevel": 0,
                     "ExtraItems": [
                         {
-                            "Id": "ItsBenter.ResourcefulFriends.ForagePatch_MixedSeeds_",
+                            "Id": "ItsBenter.ResourcefulFriends.ForagePatch_MixedSeeds",
                             "ItemId": "(O)770", //Mixed Seeds
                             "MinStack": "{{ForagePatch_MixedSeeds_MinDrops}}",
                             "MaxItems": "{{ForagePatch_MixedSeeds_MaxDrops}}",
@@ -424,7 +424,7 @@
                     "MinToolLevel": 0,
                     "ExtraItems": [
                         {
-                            "Id": "ItsBenter.ResourcefulFriends.ForagePatch_MixedSeeds_",
+                            "Id": "ItsBenter.ResourcefulFriends.ForagePatch_MixedSeeds",
                             "ItemId": "(O)770", //Mixed Seeds
                             "MinStack": "{{ForagePatch_MixedSeeds_MinDrops}}",
                             "MaxItems": "{{ForagePatch_MixedSeeds_MaxDrops}}",
@@ -577,7 +577,7 @@
                     "MinToolLevel": 0,
                     "ExtraItems": [
                         {
-                            "Id": "ItsBenter.ResourcefulFriends.ForagePatch_MixedSeeds_",
+                            "Id": "ItsBenter.ResourcefulFriends.ForagePatch_MixedSeeds",
                             "ItemId": "(O)770", //Mixed Seeds
                             "MinStack": "{{ForagePatch_MixedSeeds_MinDrops}}",
                             "MaxItems": "{{ForagePatch_MixedSeeds_MaxDrops}}",
@@ -730,7 +730,7 @@
                     "MinToolLevel": 0,
                     "ExtraItems": [
                         {
-                            "Id": "ItsBenter.ResourcefulFriends.ForagePatch_MixedSeeds_",
+                            "Id": "ItsBenter.ResourcefulFriends.ForagePatch_MixedSeeds",
                             "ItemId": "(O)770", //Mixed Seeds
                             "MinStack": "{{ForagePatch_MixedSeeds_MinDrops}}",
                             "MaxItems": "{{ForagePatch_MixedSeeds_MaxDrops}}",
@@ -883,7 +883,7 @@
                     "MinToolLevel": 0,
                     "ExtraItems": [
                         {
-                            "Id": "ItsBenter.ResourcefulFriends.ForagePatch_MixedSeeds_",
+                            "Id": "ItsBenter.ResourcefulFriends.ForagePatch_MixedSeeds",
                             "ItemId": "(O)770", //Mixed Seeds
                             "MinStack": "{{ForagePatch_MixedSeeds_MinDrops}}",
                             "MaxItems": "{{ForagePatch_MixedSeeds_MaxDrops}}",
