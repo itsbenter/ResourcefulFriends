@@ -41,12 +41,13 @@ In version 1.0.0, this mod have five farm animals. They produce existing resourc
 | Object | Explanation |
 | :----: | ----------- |
 |![Jellomone](Documentation/Objects/Jellomone.png)<br>[Jellomone](Documentation/Jellomone.md) | Produce Sea Jelly, River Jelly, and Cave Jelly when placed in fish pond. |
-|![CoalclawEgg](Documentation/Objects/CoalclawEgg.png)<br>[Coalclaw Egg](Documentation/CoalclawEgg.md) | Rarely produced by Coalclaw. Can be placed in incubator to hatch Coalclaw chick. |
+|![CoalclawEgg](Documentation/Objects/CoalclawEgg.png)<br>[Coalclaw Egg](Documentation/Coalclaw.md) | Rarely produced by Coalclaw. Can be placed in incubator to hatch Coalclaw chick. |
 
 ## Compatibility
 
-* [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753). This mods' events has been tested with SVE.
-* Recolor mods. The mod visual might look janky with some recolors. Authors are welcomed to make compatibility patches.
+* [Better Truffles](https://www.nexusmods.com/stardewvalley/mods/23228). Is not only compatible but also recommended. Gives Coalclaw and Molecat easier time to produce and give bubbles to easily spot where the produces are.
+* [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753). Petalkin will produce the forages added by SVE.
+* Recolor mods. The mod visual might look janky with some recolors. Authors are welcomed to make compatibility patches. Refer to [Compatibility](Documentation/Compatibility.md)
 
 ## FAQ
 
