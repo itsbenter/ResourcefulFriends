@@ -7,10 +7,9 @@
 Timberbark is a farm animal that lives in a Barn. It can be purchased at Marnie's Ranch for 2000G. Timberbark can become pregnant and give birth.
 
 * [Produce](#produce)
-  * [Forage Grouping](#forage-grouping)
   * [Estimation](#estimation)
   * [Auto Grabber Interaction](#auto-grabber-interaction)
-* [Configuration](#configuration)
+* [Footnote](#footnote)
 
 ## Produce
 
@@ -59,9 +58,8 @@ If Auto Grabber is placed inside Barn, Timberbark Pile and Large Timberbark Pile
 
 Adding patch to process produce using machine is in to-do-list for future update of this mod. This would allow a fully automated farm when using [Automate](https://www.nexusmods.com/stardewvalley/mods/1063).
 
-## Configuration
-
 ## Footnote
+
 <a name="Forester">1</a>: 25% increase in stack size when having Forester profession<br>
 <a name="Woody's Secret">2</a>: 5% chance to double the stack size when having Woody's Secret power up<br>
 <a name="Lumberjack">1</a>: +1 increase in Hardwood when having Lumberjack profession<br>

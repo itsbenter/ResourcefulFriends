@@ -8,7 +8,7 @@ Molecat is a farm animal that lives in a Coop. It can be purchased at Marnie's R
 * [Produce](#produce)
   * [Estimation](#estimation)
   * [Auto Grabber Interaction](#auto-grabber-interaction)
-* [Configuration](#configuration)
+* [Footnote](#footnote)
 
 ## Variation
 
@@ -50,15 +50,13 @@ Here is a rough estimate of Molecat produce in a season. A number between 2 prod
 | Iridium Ore<sup>[2](#IridiumOre)</sup> | 21 | 42 | 63 |
 | *With Miner profession*<sup>[1](#Miner)</sup> | 35 | 70 | 105 |
 
-
 ### Auto Grabber Interaction
 
 If Auto Grabber is placed inside Coop and Molecat produce inside the Coop (using appropriate config), Molecat Node will be picked up by Auto Grabber. Player can then grab the Node to the inventory, place them on the ground, and destroy them using pickaxe to get the resources.
 
 Adding patch to process produce using machine is in to-do-list for future update of this mod. This would allow a fully automated farm when using [Automate](https://www.nexusmods.com/stardewvalley/mods/1063).
 
-## Configuration
-
 ## Footnote
+
 <a name="Miner">1</a>: +1 increase in ore stack size when having Miner profession<br>
 <a name="IridiumOre">2</a>: 50% chance to find Iridium Ore after mining at least one Iridium Ore<br>

@@ -9,7 +9,7 @@ Petalkin is a farm animal that lives in a Barn. It can be purchased at Marnie's 
   * [Forage Grouping](#forage-grouping)
   * [Estimation](#estimation)
   * [Auto Grabber Interaction](#auto-grabber-interaction)
-* [Configuration](#configuration)
+* [Footnote](#footnote)
 
 ## Seasonal Appearance
 
@@ -78,8 +78,7 @@ If Auto Grabber is placed inside Barn, Forage Patch will be picked up by Auto Gr
 
 Adding patch to process produce using machine is in to-do-list for future update of this mod. This would allow a fully automated farm when using [Automate](https://www.nexusmods.com/stardewvalley/mods/1063).
 
-## Configuration
-
 ## Footnote
+
 <a name="Salmonberry">1</a>: Only during Salmonberry season (15 - 18 Spring)<br>
 <a name="Gatherer">2</a>: 20% chance to double the stack size when having Gatherer profession<br>

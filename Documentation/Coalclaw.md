@@ -10,7 +10,7 @@ Coalclaw is a farm animal that lives in a Coop. It can be purchased at Marnie's 
 * [Produce](#produce)
   * [Estimation](#estimation)
   * [Auto Grabber Interaction](#auto-grabber-interaction)
-* [Configuration](#configuration)
+* [Footnote](#footnote)
 
 ## Variation
 
@@ -56,8 +56,7 @@ If Auto Grabber is placed inside Coop and Coalclaw produce inside the Coop (usin
 
 Adding patch to process produce using machine is in to-do-list for future update of this mod. This would allow a fully automated farm when using [Automate](https://www.nexusmods.com/stardewvalley/mods/1063).
 
-## Configuration
-
 ## Footnote
+
 <a name="Prospector">1</a>: 50% increase in stack size when having Prospector profession<br>
 <a name="LargeCoalclawClump">2</a>: 50% chance to produce when having sufficient friendship and happiness<br>

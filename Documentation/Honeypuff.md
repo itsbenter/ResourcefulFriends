@@ -9,7 +9,6 @@ Honeypuff is a farm animal that lives in a Coop. It can be purchased at Marnie's
 * [Variation](#variation)
 * [Produce](#produce)
   * [Calculation](#calculation)
-* [Configuration](#configuration)
 
 ## Variation
 
@@ -30,5 +29,3 @@ Here is a calculation of Honeypuff produce in a season. [Spreadsheet](https://do
 | Resource | Days to produce: 2 | Days to produce: 1 |
 | -------- | ------------------ | ------------------ |
 | Honey | 14 | 28 |
-
-## Configuration
