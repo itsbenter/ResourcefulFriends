@@ -25,7 +25,8 @@
                     "ContextTags": [
                         "color_black",
                         "itsbenter_coalclawclump",
-                        "placeable"
+                        "placeable",
+                        "temisthem_bettertruffles"
                     ],
                     "ExtraItems": [
                         {
@@ -63,7 +64,8 @@
                     "ContextTags": [
                         "color_black",
                         "itsbenter_coalclawclump",
-                        "placeable"
+                        "placeable",
+                        "temisthem_bettertruffles"
                     ],
                     "ExtraItems": [
                         {
@@ -1040,7 +1042,8 @@
                     "ContextTags": [
                         "color_grey",
                         "itsbenter_molecatnode",
-                        "placeable"
+                        "placeable",
+                        "temisthem_bettertruffles"
                     ],
                     "ExtraItems": [
                         {
