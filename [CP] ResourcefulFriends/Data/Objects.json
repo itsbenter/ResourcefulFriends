@@ -12,7 +12,7 @@
                     "Type": "Basic",
                     "Category": -23,
                     "Edibility": -300,
-                    "Price": 550,
+                    "Price": "{{Jellomone_Price}}",
                     "ContextTags": [
                         "color_grey",
                         "not_giftable",

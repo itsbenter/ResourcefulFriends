@@ -17,13 +17,10 @@
                     "Sound": "hammer",
                     "BreakingSound": "stoneCrack",
                     "Debris": "stone #261d19",
-                    "ItemDropped": "(O)382", //Coal
                     "Tool": "Pickaxe",
                     "MinToolLevel": 0,
-                    "MinDrops": 0,
-                    "MaxDrops": 0,
                     "Shake": true,
-                    "Exp": 5,
+                    "Exp": 7,
                     "Skill": "mining",
                     "ContextTags": [
                         "color_black",
@@ -34,8 +31,8 @@
                         {
                             "Id": "ItsBenter.ResourcefulFriends.CoalclawClump",
                             "ItemId": "(O)382",
-                            "MinStack": 4,
-                            "MaxStack": 6,
+                            "MinStack": "{{CoalclawClump_Coal_MinDrops}}",
+                            "MaxStack": "{{CoalclawClump_Coal_MaxDrops}}",
                             "StackModifiers": [
                                 {
                                     "Id": "ItsBenter.ResourcefulFriends.MolecatNode_MinerProfession",
@@ -73,8 +70,8 @@
                             "Id": "ItsBenter.ResourcefulFriends.CoalclawClump",
                             "Quality": 0,
                             "ItemId": "(O)382", //Coal
-                            "MinStack": 7,
-                            "MaxStack": 9,
+                            "MinStack": "{{LargeCoalclawClump_Coal_MinDrops}}",
+                            "MaxStack": "{{LargeCoalclawClump_Coal_MaxDrops}}",
                             "StackModifiers": [
                                 {
                                     "Id": "ItsBenter.ResourcefulFriends.MolecatNode_MinerProfession",
@@ -97,17 +94,20 @@
                     "Height": 1,
                     "Sound": "axe",
                     "BreakingSound": null,
-                    "ItemDropped": "(O)92", //Sap
                     "Tool": "Axe",
                     "MinToolLevel": 0,
-                    "MinDrops": 5,
-                    "MaxDrops": 5,
                     "ExtraItems": [
                         {
-                            "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_Wood",
+                            "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_Sap_",
+                            "ItemId": "(O)92", //Sap
+                            "MinStack": "{{TimberbarkPile_Sap_MinDrops}}",
+                            "MaxStack": "{{TimberbarkPile_Sap_MaxDrops}}",
+                        },
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_Wood_",
                             "ItemId": "(O)388", //Wood
-                            "MinStack": 12,
-                            "MaxStack": 16,
+                            "MinStack": "{{TimberbarkPile_Wood_MinDrops}}",
+                            "MaxStack": "{{TimberbarkPile_Wood_MaxDrops}}",
                             "StackModifiers": [
                                 {
                                     "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_Forester",
@@ -116,7 +116,7 @@
                                     "Amount": 1.25,
                                 },
                                 {
-                                    "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_WoodySecret",
+                                    "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_Wood_ySecret",
                                     "Condition": "PLAYER_STAT Current Book_Woodcutting 1", //Woody Secret
                                     "Chance": 0.05,
                                     "Modification": "Multiply",
@@ -125,10 +125,10 @@
                             ]
                         },
                         {
-                            "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_Hardwood",
+                            "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_Hardwood_",
                             "ItemId": "(O)709", //Hardwood
-                            "MinStack": 0,
-                            "MaxStack": 0,
+                            "MinStack": "{{TimberbarkPile_Hardwood_MinDrops}}",
+                            "MaxStack": "{{TimberbarkPile_Hardwood_MaxDrops}}",
                             "StackModifiers": [
                                 {
                                     "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_Lumberjack",
@@ -143,7 +143,7 @@
                                     "Amount": 1.25,
                                 },
                                 {
-                                    "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_WoodySecret",
+                                    "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_Wood_ySecret",
                                     "Condition": "PLAYER_STAT Current Book_Woodcutting 1", //Lumberjack
                                     "Chance": 0.05,
                                     "Modification": "Multiply",
@@ -152,10 +152,10 @@
                             ],
                         },
                         {
-                            "Id": "ItsBenter.ResourcefulFriends.LargeTimberbarkPile_Moss",
+                            "Id": "ItsBenter.ResourcefulFriends.LargeTimberbarkPile_Moss_",
                             "ItemId": "Moss",
-                            "MinStack": 1,
-                            "MaxStack": 3,
+                            "MinStack": "{{TimberbarkPile_Moss_MinDrops}}",
+                            "MaxStack": "{{TimberbarkPile_Moss_MaxDrops}}",
                         }
                     ],
                     "SecretNotes": false,
@@ -179,17 +179,20 @@
                     "Height": 1,
                     "Sound": "axe",
                     "BreakingSound": null,
-                    "ItemDropped": "(O)92", //Sap
                     "Tool": "Axe",
                     "MinToolLevel": 0,
-                    "MinDrops": 6,
-                    "MaxDrops": 8,
                     "ExtraItems": [
                         {
-                            "Id": "ItsBenter.ResourcefulFriends.LargeTimberbarkPile_Wood",
+                            "Id": "ItsBenter.ResourcefulFriends.LargeTimberbarkPile_Sap_",
+                            "ItemId": "(O)92", //Sap
+                            "MinStack": "{{LargeTimberbarkPile_Sap_MinDrops}}",
+                            "MaxStack": "{{LargeTimberbarkPile_Sap_MaxDrops}}",
+                        },
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.LargeTimberbarkPile_Wood_",
                             "ItemId": "(O)388", //Wood
-                            "MinStack": 18,
-                            "MaxStack": 24,
+                            "MinStack": "{{LargeTimberbarkPile_Wood_MinDrops}}",
+                            "MaxStack": "{{LargeTimberbarkPile_Wood_MaxDrops}}",
                             "StackModifiers": [
                                 {
                                     "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_Forester",
@@ -198,7 +201,7 @@
                                     "Amount": 1.25,
                                 },
                                 {
-                                    "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_WoodySecret",
+                                    "Id": "ItsBenter.ResourcefulFriends.TimberbarkPile_Wood_ySecret",
                                     "Condition": "PLAYER_STAT Current Book_Woodcutting 1", //Lumberjack
                                     "Chance": 0.05,
                                     "Modification": "Multiply",
@@ -207,10 +210,10 @@
                             ]
                         },
                         {
-                            "Id": "ItsBenter.ResourcefulFriends.LargeTimberbarkPile_Hardwood",
+                            "Id": "ItsBenter.ResourcefulFriends.LargeTimberbarkPile_Hardwood_",
                             "ItemId": "(O)709", //Hardwood
-                            "MinStack": 2,
-                            "MaxStack": 2,
+                            "MinStack": "{{LargeTimberbarkPile_Hardwood_MinDrops}}",
+                            "MaxStack": "{{LargeTimberbarkPile_Hardwood_MaxDrops}}",
                             "StackModifiers": [
                                 {
                                     "Id": "ItsBenter.ResourcefulFriends.LargeTimberbarkPile_Lumberjack",
@@ -225,7 +228,7 @@
                                     "Amount": 1.25,
                                 },
                                 {
-                                    "Id": "ItsBenter.ResourcefulFriends.LargeTimberbarkPile_WoodySecret",
+                                    "Id": "ItsBenter.ResourcefulFriends.LargeTimberbarkPile_Wood_ySecret",
                                     "Condition": "PLAYER_STAT Current Book_Woodcutting 1", //Lumberjack
                                     "Chance": 0.05,
                                     "Modification": "Multiply",
@@ -234,14 +237,14 @@
                             ],
                         },
                         {
-                            "Id": "ItsBenter.ResourcefulFriends.LargeTimberbarkPile_Moss",
+                            "Id": "ItsBenter.ResourcefulFriends.LargeTimberbarkPile_Moss_",
                             "ItemId": "Moss",
-                            "MinStack": 3,
-                            "MaxStack": 5,
+                            "MinStack": "{{LargeTimberbarkPile_Moss_MinDrops}}",
+                            "MaxStack": "{{LargeTimberbarkPile_Moss_MaxDrops}}",
                         }
                     ],
                     "SecretNotes": false,
-                    "Exp": 5,
+                    "Exp": "{{LargeTimberbarkPile_ForagingExperience}}",
                     "Skill": "foraging",
                     "CountTowards": "Stumps",
                     "Debris": "wood",
@@ -261,22 +264,25 @@
                     "Width": 1,
                     "Height": 1,
                     "Sound": "axe",
-                    "ItemDropped": "(O)770", //Mixed seeds
-                    "MinDrops": 1, //min to drop
-                    "MaxDrops": 3, //max to drop
                     "BreakingSound": "cut",
                     "Tool": "AnyExceptWateringCan",
                     "MinToolLevel": 0,
                     "ExtraItems": [
                         {
+                            "Id": "ItsBenter.ResourcefulFriends.ForagePatch_MixedSeeds_",
+                            "ItemId": "(O)770", //Mixed Seeds
+                            "MinStack": "{{ForagePatch_MixedSeeds_MinDrops}}",
+                            "MaxItems": "{{ForagePatch_MixedSeeds_MaxDrops}}",
+                        },
+                        {
                             "Id": "ItsBenter.ResourcefulFriends.SpringForagePatch_Common",
                             "Quality": 0,
                             "ItemId": "RANDOM_ITEMS (O)",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_spring_common",
-                            "MinStack": 2,
-                            "MaxStack": 5,
-                            "MinItems": 2,
-                            "MaxItems": 2,
+                            "MinStack": "{{ForagePatch_Common_MinDropsPerForageType}}",
+                            "MaxStack": "{{ForagePatch_Common_MaxDropsPerForageType}}",
+                            "MinItems": "{{ForagePatch_Common_MinForageType}}",
+                            "MaxItems": "{{ForagePatch_Common_MaxForageType}}",
                             "QualityModifiers": [
                                 //Need to test level 15 quality will it give gold or not
                                 {
@@ -313,10 +319,12 @@
                             "Id": "ItsBenter.ResourcefulFriends.SpringForagePatch_Uncommon",
                             "Quality": 0,
                             "ItemId": "RANDOM_ITEMS (O)",
-                            "Condition": "RANDOM 0.75",
+                            "Condition": "RANDOM {{ForagePatch_Uncommon_Chance}}",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_spring_uncommon",
-                            "MaxStack": 1,
-                            "MaxItems": 1,
+                            "MinStack": "{{ForagePatch_Uncommon_MinDropsPerForageType}}",
+                            "MaxStack": "{{ForagePatch_Uncommon_MaxDropsPerForageType}}",
+                            "MinItems": "{{ForagePatch_Uncommon_MinForageType}}",
+                            "MaxItems": "{{ForagePatch_Uncommon_MaxForageType}}",
                             "QualityModifiers": [
                                 {
                                     "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
@@ -354,8 +362,10 @@
                             "ItemId": "RANDOM_ITEMS (O)",
                             "Condition": "RANDOM 0.20",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_spring_rare",
-                            "MaxStack": 1,
-                            "MaxItems": 1,
+                            "MinStack": "{{ForagePatch_Rare_MinDropsPerForageType}}",
+                            "MaxStack": "{{ForagePatch_Rare_MaxDropsPerForageType}}",
+                            "MinItems": "{{ForagePatch_Rare_MinForageType}}",
+                            "MaxItems": "{{ForagePatch_Rare_MaxForageType}}",
                             "QualityModifiers": [
                                 {
                                     "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
@@ -389,7 +399,7 @@
                         }
                     ],
                     "SecretNotes": false,
-                    "Exp": 12,
+                    "Exp": "{{ForagePatch_ForagingExperience}}",
                     "Skill": "foraging",
                     "ContextTags": [
                         "color_green",
@@ -407,22 +417,25 @@
                     "Width": 1,
                     "Height": 1,
                     "Sound": "axe",
-                    "ItemDropped": "(O)770", //Mixed seeds
-                    "MinDrops": 1, //min to drop
-                    "MaxDrops": 3, //max to drop
                     "BreakingSound": "cut",
                     "Tool": "AnyExceptWateringCan",
                     "MinToolLevel": 0,
                     "ExtraItems": [
                         {
+                            "Id": "ItsBenter.ResourcefulFriends.ForagePatch_MixedSeeds_",
+                            "ItemId": "(O)770", //Mixed Seeds
+                            "MinStack": "{{ForagePatch_MixedSeeds_MinDrops}}",
+                            "MaxItems": "{{ForagePatch_MixedSeeds_MaxDrops}}",
+                        },
+                        {
                             "Id": "ItsBenter.ResourcefulFriends.SummerForagePatch_Common",
                             "Quality": 0,
                             "ItemId": "RANDOM_ITEMS (O)",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_summer_common",
-                            "MinStack": 2,
-                            "MaxStack": 5,
-                            "MinItems": 2,
-                            "MaxItems": 2,
+                            "MinStack": "{{ForagePatch_Common_MinDropsPerForageType}}",
+                            "MaxStack": "{{ForagePatch_Common_MaxDropsPerForageType}}",
+                            "MinItems": "{{ForagePatch_Common_MinForageType}}",
+                            "MaxItems": "{{ForagePatch_Common_MaxForageType}}",
                             "QualityModifiers": [
                                 //Need to test level 15 quality will it give gold or not
                                 {
@@ -459,10 +472,12 @@
                             "Id": "ItsBenter.ResourcefulFriends.SummerForagePatch_Uncommon",
                             "Quality": 0,
                             "ItemId": "RANDOM_ITEMS (O)",
-                            "Condition": "RANDOM 0.75",
+                            "Condition": "RANDOM {{ForagePatch_Uncommon_Chance}}",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_summer_uncommon",
-                            "MaxStack": 1,
-                            "MaxItems": 1,
+                            "MinStack": "{{ForagePatch_Uncommon_MinDropsPerForageType}}",
+                            "MaxStack": "{{ForagePatch_Uncommon_MaxDropsPerForageType}}",
+                            "MinItems": "{{ForagePatch_Uncommon_MinForageType}}",
+                            "MaxItems": "{{ForagePatch_Uncommon_MaxForageType}}",
                             "QualityModifiers": [
                                 {
                                     "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
@@ -498,10 +513,12 @@
                             "Id": "ItsBenter.ResourcefulFriends.SummerForagePatch_Rare",
                             "Quality": 0,
                             "ItemId": "RANDOM_ITEMS (O)",
-                            "Condition": "RANDOM 0.20",
+                            "Condition": "RANDOM {{ForagePatch_Rare_Chance}}",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_summer_rare",
-                            "MaxStack": 1,
-                            "MaxItems": 1,
+                            "MinStack": "{{ForagePatch_Rare_MinDropsPerForageType}}",
+                            "MaxStack": "{{ForagePatch_Rare_MaxDropsPerForageType}}",
+                            "MinItems": "{{ForagePatch_Rare_MinForageType}}",
+                            "MaxItems": "{{ForagePatch_Rare_MaxForageType}}",
                             "QualityModifiers": [
                                 {
                                     "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
@@ -535,7 +552,7 @@
                         }
                     ],
                     "SecretNotes": false,
-                    "Exp": 12,
+                    "Exp": "{{ForagePatch_ForagingExperience}}",
                     "Skill": "foraging",
                     "ContextTags": [
                         "color_green",
@@ -553,22 +570,25 @@
                     "Width": 1,
                     "Height": 1,
                     "Sound": "axe",
-                    "ItemDropped": "(O)770", //Mixed seeds
-                    "MinDrops": 1, //min to drop
-                    "MaxDrops": 3, //max to drop
                     "BreakingSound": "cut",
                     "Tool": "AnyExceptWateringCan",
                     "MinToolLevel": 0,
                     "ExtraItems": [
                         {
+                            "Id": "ItsBenter.ResourcefulFriends.ForagePatch_MixedSeeds_",
+                            "ItemId": "(O)770", //Mixed Seeds
+                            "MinStack": "{{ForagePatch_MixedSeeds_MinDrops}}",
+                            "MaxItems": "{{ForagePatch_MixedSeeds_MaxDrops}}",
+                        },
+                        {
                             "Id": "ItsBenter.ResourcefulFriends.FallForagePatch_Common",
                             "Quality": 0,
                             "ItemId": "RANDOM_ITEMS (O)",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_fall_common",
-                            "MinStack": 2,
-                            "MaxStack": 5,
-                            "MinItems": 2,
-                            "MaxItems": 2,
+                            "MinStack": "{{ForagePatch_Common_MinDropsPerForageType}}",
+                            "MaxStack": "{{ForagePatch_Common_MaxDropsPerForageType}}",
+                            "MinItems": "{{ForagePatch_Common_MinForageType}}",
+                            "MaxItems": "{{ForagePatch_Common_MaxForageType}}",
                             "QualityModifiers": [
                                 //Need to test level 15 quality will it give gold or not
                                 {
@@ -605,10 +625,12 @@
                             "Id": "ItsBenter.ResourcefulFriends.FallForagePatch_Uncommon",
                             "Quality": 0,
                             "ItemId": "RANDOM_ITEMS (O)",
-                            "Condition": "RANDOM 0.75",
+                            "Condition": "RANDOM {{ForagePatch_Uncommon_Chance}}",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_fall_uncommon",
-                            "MaxStack": 1,
-                            "MaxItems": 1,
+                            "MinStack": "{{ForagePatch_Uncommon_MinDropsPerForageType}}",
+                            "MaxStack": "{{ForagePatch_Uncommon_MaxDropsPerForageType}}",
+                            "MinItems": "{{ForagePatch_Uncommon_MinForageType}}",
+                            "MaxItems": "{{ForagePatch_Uncommon_MaxForageType}}",
                             "QualityModifiers": [
                                 {
                                     "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
@@ -646,8 +668,10 @@
                             "ItemId": "RANDOM_ITEMS (O)",
                             "Condition": "RANDOM 0.20",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_fall_rare",
-                            "MaxStack": 1,
-                            "MaxItems": 1,
+                            "MinStack": "{{ForagePatch_Rare_MinDropsPerForageType}}",
+                            "MaxStack": "{{ForagePatch_Rare_MaxDropsPerForageType}}",
+                            "MinItems": "{{ForagePatch_Rare_MinForageType}}",
+                            "MaxItems": "{{ForagePatch_Rare_MaxForageType}}",
                             "QualityModifiers": [
                                 {
                                     "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
@@ -681,7 +705,7 @@
                         }
                     ],
                     "SecretNotes": false,
-                    "Exp": 12,
+                    "Exp": "{{ForagePatch_ForagingExperience}}",
                     "Skill": "foraging",
                     "ContextTags": [
                         "color_orange",
@@ -699,22 +723,25 @@
                     "Width": 1,
                     "Height": 1,
                     "Sound": "axe",
-                    "ItemDropped": "(O)770", //Mixed seeds
-                    "MinDrops": 1, //min to drop
-                    "MaxDrops": 3, //max to drop
                     "BreakingSound": "cut",
                     "Tool": "AnyExceptWateringCan",
                     "MinToolLevel": 0,
                     "ExtraItems": [
                         {
+                            "Id": "ItsBenter.ResourcefulFriends.ForagePatch_MixedSeeds_",
+                            "ItemId": "(O)770", //Mixed Seeds
+                            "MinStack": "{{ForagePatch_MixedSeeds_MinDrops}}",
+                            "MaxItems": "{{ForagePatch_MixedSeeds_MaxDrops}}",
+                        },
+                        {
                             "Id": "ItsBenter.ResourcefulFriends.WinterForagePatch_Common",
                             "Quality": 0,
                             "ItemId": "RANDOM_ITEMS (O)",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_winter_common",
-                            "MinStack": 2,
-                            "MaxStack": 5,
-                            "MinItems": 2,
-                            "MaxItems": 2,
+                            "MinStack": "{{ForagePatch_Common_MinDropsPerForageType}}",
+                            "MaxStack": "{{ForagePatch_Common_MaxDropsPerForageType}}",
+                            "MinItems": "{{ForagePatch_Common_MinForageType}}",
+                            "MaxItems": "{{ForagePatch_Common_MaxForageType}}",
                             "QualityModifiers": [
                                 //Need to test level 15 quality will it give gold or not
                                 {
@@ -751,10 +778,12 @@
                             "Id": "ItsBenter.ResourcefulFriends.WinterForagePatch_Uncommon",
                             "Quality": 0,
                             "ItemId": "RANDOM_ITEMS (O)",
-                            "Condition": "RANDOM 0.75",
+                            "Condition": "RANDOM {{ForagePatch_Uncommon_Chance}}",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_winter_uncommon",
-                            "MaxStack": 1,
-                            "MaxItems": 1,
+                            "MinStack": "{{ForagePatch_Uncommon_MinDropsPerForageType}}",
+                            "MaxStack": "{{ForagePatch_Uncommon_MaxDropsPerForageType}}",
+                            "MinItems": "{{ForagePatch_Uncommon_MinForageType}}",
+                            "MaxItems": "{{ForagePatch_Uncommon_MaxForageType}}",
                             "QualityModifiers": [
                                 {
                                     "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
@@ -792,8 +821,10 @@
                             "ItemId": "RANDOM_ITEMS (O)",
                             "Condition": "RANDOM 0.20",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_winter_rare",
-                            "MaxStack": 1,
-                            "MaxItems": 1,
+                            "MinStack": "{{ForagePatch_Rare_MinDropsPerForageType}}",
+                            "MaxStack": "{{ForagePatch_Rare_MaxDropsPerForageType}}",
+                            "MinItems": "{{ForagePatch_Rare_MinForageType}}",
+                            "MaxItems": "{{ForagePatch_Rare_MaxForageType}}",
                             "QualityModifiers": [
                                 {
                                     "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
@@ -827,7 +858,7 @@
                         }
                     ],
                     "SecretNotes": false,
-                    "Exp": 12,
+                    "Exp": "{{ForagePatch_ForagingExperience}}",
                     "Skill": "foraging",
                     "ContextTags": [
                         "color_blue",
@@ -845,22 +876,25 @@
                     "Width": 1,
                     "Height": 1,
                     "Sound": "axe",
-                    "ItemDropped": "(O)770", //Mixed seeds
-                    "MinDrops": 1, //min to drop
-                    "MaxDrops": 3, //max to drop
                     "BreakingSound": "cut",
                     "Tool": "AnyExceptWateringCan",
                     "MinToolLevel": 0,
                     "ExtraItems": [
                         {
+                            "Id": "ItsBenter.ResourcefulFriends.ForagePatch_MixedSeeds_",
+                            "ItemId": "(O)770", //Mixed Seeds
+                            "MinStack": "{{ForagePatch_MixedSeeds_MinDrops}}",
+                            "MaxItems": "{{ForagePatch_MixedSeeds_MaxDrops}}",
+                        },
+                        {
                             "Id": "ItsBenter.ResourcefulFriends.GingerIslandForagePatch_Common",
                             "Quality": 0,
                             "ItemId": "RANDOM_ITEMS (O)",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_gingerisland_common",
-                            "MinStack": 2,
-                            "MaxStack": 5,
-                            "MinItems": 2,
-                            "MaxItems": 2,
+                            "MinStack": "{{ForagePatch_Common_MinDropsPerForageType}}",
+                            "MaxStack": "{{ForagePatch_Common_MaxDropsPerForageType}}",
+                            "MinItems": "{{ForagePatch_Common_MinForageType}}",
+                            "MaxItems": "{{ForagePatch_Common_MaxForageType}}",
                             "QualityModifiers": [
                                 //Need to test level 15 quality will it give gold or not
                                 {
@@ -897,10 +931,12 @@
                             "Id": "ItsBenter.ResourcefulFriends.GingerIslandForagePatch_Uncommon",
                             "Quality": 0,
                             "ItemId": "RANDOM_ITEMS (O)",
-                            "Condition": "RANDOM 0.75",
+                            "Condition": "RANDOM {{ForagePatch_Uncommon_Chance}}",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_gingerisland_uncommon",
-                            "MaxStack": 1,
-                            "MaxItems": 1,
+                            "MinStack": "{{ForagePatch_Uncommon_MinDropsPerForageType}}",
+                            "MaxStack": "{{ForagePatch_Uncommon_MaxDropsPerForageType}}",
+                            "MinItems": "{{ForagePatch_Uncommon_MinForageType}}",
+                            "MaxItems": "{{ForagePatch_Uncommon_MaxForageType}}",
                             "QualityModifiers": [
                                 {
                                     "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
@@ -938,8 +974,10 @@
                             "ItemId": "RANDOM_ITEMS (O)",
                             "Condition": "RANDOM 0.20",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target itsbenter_petalkin_gingerisland_rare",
-                            "MaxStack": 1,
-                            "MaxItems": 1,
+                            "MinStack": "{{ForagePatch_Rare_MinDropsPerForageType}}",
+                            "MaxStack": "{{ForagePatch_Rare_MaxDropsPerForageType}}",
+                            "MinItems": "{{ForagePatch_Rare_MinForageType}}",
+                            "MaxItems": "{{ForagePatch_Rare_MaxForageType}}",
                             "QualityModifiers": [
                                 {
                                     "Id": "ItsBenter.ResourcefulFriends.ForagePatch_SilverQuality",
@@ -973,7 +1011,7 @@
                         }
                     ],
                     "SecretNotes": false,
-                    "Exp": 12,
+                    "Exp": "{{ForagePatch_ForagingExperience}}",
                     "Skill": "foraging",
                     "ContextTags": [
                         "color_green",
@@ -992,15 +1030,12 @@
                     "Height": 1,
                     "Health": 1,
                     "Sound": "hammer",
-                    "ItemDropped": "(O)390", //Stone
-                    "MinDrops": 2, //min to drop
-                    "MaxDrops": 3, //max to drop
                     "BreakingSound": "stoneCrack",
                     "Debris": "stone #778180",
                     "Tool": "Pickaxe",
                     "MinToolLevel": 0,
                     "Shake": true,
-                    "Exp": 20,
+                    "Exp": "{{MolecatNode_MiningExperience}}",
                     "Skill": "mining",
                     "ContextTags": [
                         "color_grey",
@@ -1009,14 +1044,21 @@
                     ],
                     "ExtraItems": [
                         {
-                            "Id": "ItsBenter.ResourcefulFriends.MolecatNode_BasicResources", //Copper, Iron, Gold
+                            "Id": "ItsBenter.ResourcefulFriends.MolecatNode_Stone",
+                            "Quality": 0,
+                            "ItemId": "(O)390", //Stone
+                            "MinStack": "{{MolecatNode_Stone_MinDrops}}",
+                            "MaxStack": "{{MolecatNode_Stone_MaxDrops}}",
+                        },
+                        {
+                            "Id": "ItsBenter.ResourcefulFriends.MolecatNode_CommonOres",
                             "Quality": 0,
                             "ItemId": "RANDOM_ITEMS (O)",
-                            "PerItemCondition": "ITEM_ID Target (O)378 (O)380 (O)384", //Ore item except iridium and radioactive ore
-                            "MinStack": 2,
-                            "MaxStack": 4,
-                            "MinItems": 2,
-                            "MaxItems": 2,
+                            "PerItemCondition": "ITEM_ID Target (O)378 (O)380 (O)384", //Copper, Iron, Gold. Ore items except iridium and radioactive ore
+                            "MinStack": "{{MolecatNode_Common_MinDropsPerOreType}}",
+                            "MaxStack": "{{MolecatNode_Common_MaxDropsPerOreType}}",
+                            "MinItems": "{{MolecatNode_Common_MinOreType}}",
+                            "MaxItems": "{{MolecatNode_Common_MaxOreType}}",
                             "StackModifiers": [
                                 {
                                     "Id": "ItsBenter.ResourcefulFriends.MolecatNode_MinerProfession",
@@ -1027,13 +1069,13 @@
                             ],
                         },
                         {
-                            "Id": "ItsBenter.ResourcefulFriends.MolecatNode_Iridium", //Iridium
+                            "Id": "ItsBenter.ResourcefulFriends.MolecatNode_IridiumOre", //Iridium
                             "Quality": 0,
                             "Condition": "PLAYER_STAT Any iridiumFound 1", //Has found at least 1 iridium
                             "ItemId": "(O)386", //Iridium
-                            "Chance": 0.33,
-                            "MinStack": 1,
-                            "MaxStack": 2,
+                            "Chance": "{{MolecatNode_IridiumOre_Chance}}",
+                            "MinStack": "{{MolecatNode_IridiumOre_MinDrops}}",
+                            "MaxStack": "{{MolecatNode_IridiumOre_MaxDrops}}",
                             "StackModifiers": [
                                 {
                                     "Id": "ItsBenter.ResourcefulFriends.MolecatNode_MinerProfession",
@@ -1046,6 +1088,6 @@
                     ],
                 }
             }
-        },      
+        },
     ]
 }

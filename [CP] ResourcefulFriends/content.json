@@ -2,7 +2,7 @@
   "$schema": "https://smapi.io/schemas/content-patcher.json",
   "Format": "2.0.0",
   "ConfigSchema": {
-    "EnableCoalclaw": {
+    "Coalclaw_Enabled": {
       "AllowValues": "true, false",
       "Default": "true",
       "Section": "Coalclaw"
@@ -14,46 +14,381 @@
     },
     "CoalclawProduceOnRainyDays": {
       "AllowValues": "true, false",
-      "Default": "false",
+      "Default": "true",
       "Section": "Coalclaw"
     },
-    "EnableHoneypuff": {
+    "Coalclaw_PurchasePrice": {
+      "Default": "550",
+      "Section": "Coalclaw"
+    },
+    "Coalclaw_SellPrice": {
+      "Default": "1100",
+      "Section": "Coalclaw"
+    },
+    "Coalclaw_DaysToMature": {
+      "Default": "2",
+      "Section": "Coalclaw"
+    },
+    "CoalclawClump_Coal_MinDrops": {
+      "Default": "4",
+      "Section": "CoalclawClump"
+    },
+    "CoalclawClump_Coal_MaxDrops": {
+      "Default": "6",
+      "Section": "CoalclawClump"
+    },
+    "LargeCoalclawClump_Coal_MinDrops": {
+      "Default": "7",
+      "Section": "LargeCoalclawClump"
+    },
+    "LargeCoalclawClump_Coal_MaxDrops": {
+      "Default": "9",
+      "Section": "LargeCoalclawClump"
+    },
+    "Honeypuff_Enabled": {
       "AllowValues": "true, false",
       "Default": "true",
       "Section": "Honeypuff"
     },
-    "EnableJellomone": {
+    "Honeypuff_PurchasePrice": {
+      "Default": "1250",
+      "Section": "Honeypuff"
+    },
+    "Honeypuff_SellPrice": {
+      "Default": "2500",
+      "Section": "Honeypuff"
+    },
+    "Honeypuff_DaysToMature": {
+      "Default": "3",
+      "Section": "Honeypuff"
+    },
+    "Honeypuff_DaysToProduce": {
+      "Default": "2",
+      "Section": "Honeypuff"
+    },
+    "Jellomone_Enabled": {
       "AllowValues": "true, false",
       "Default": "true",
       "Section": "Jellomone"
     },
-    "EnableMolecat": {
+    "Jellomone_Price": {
+      "AllowValues": "550",
+      "Default": "true",
+      "Section": "Jellomone"
+    },
+    "Molecat_Enabled": {
       "AllowValues": "true, false",
       "Default": "true",
       "Section": "Molecat"
     },
-    "MolecatProduceOnWinter": {
+    "Molecat_PurchasePrice": {
+      "Default": "1100",
+      "Section": "Molecat"
+    },
+    "Molecat_SellPrice": {
+      "Default": "2200",
+      "Section": "Molecat"
+    },
+    "Molecat_DaysToMature": {
+      "Default": "3",
+      "Section": "Molecat"
+    },
+    "Molecat_ProduceOnWinter": {
       "AllowValues": "true, false",
       "Default": "true",
       "Section": "Molecat"
     },
-    "MolecatProduceOnRainyDays": {
+    "Molecat_ProduceOnRainyDays": {
       "AllowValues": "true, false",
-      "Default": "false",
+      "Default": "true",
       "Section": "Molecat"
     },
-    "EnablePetalkin": {
+    "MolecatNode_Stone_MinDrops": {
+      "Default": "2",
+      "Section": "MolecatNode"
+    },
+    "MolecatNode_Stone_MaxDrops": {
+      "Default": "3",
+      "Section": "MolecatNode"
+    },
+    "MolecatNode_Common_MinOreType": {
+      "Default": "2",
+      "Section": "MolecatNode"
+    },
+    "MolecatNode_Common_MaxOreType": {
+      "Default": "2",
+      "Section": "MolecatNode"
+    },
+    "MolecatNode_Common_MinDropsPerOreType": {
+      "Default": "2",
+      "Section": "MolecatNode"
+    },
+    "MolecatNode_Common_MaxDropsPerOreType": {
+      "Default": "4",
+      "Section": "MolecatNode"
+    },
+    "MolecatNode_IridiumOre_Chance": {
+      "Default": "0.33",
+      "Section": "MolecatNode"
+    },
+    "MolecatNode_IridiumOre_MinDrops": {
+      "Default": "1",
+      "Section": "MolecatNode"
+    },
+    "MolecatNode_IridiumOre_MaxDrops": {
+      "Default": "2",
+      "Section": "MolecatNode"
+    },
+    "MolecatNode_MiningExperience": {
+      "Default": "20",
+      "Section": "MolecatNode"
+    },
+    "Petalkin_Enabled": {
       "AllowValues": "true, false",
       "Default": "true",
       "Section": "Petalkin"
     },
-    "EnableTimberbark": {
+    "Petalkin_PurchasePrice": {
+      "Default": "2000",
+      "Section": "Petalkin"
+    },
+    "Petalkin_SellPrice": {
+      "Default": "4000",
+      "Section": "Petalkin"
+    },
+    "Petalkin_DaysToMature": {
+      "Default": "5",
+      "Section": "Petalkin"
+    },
+    "Petalkin_DaysToProduce": {
+      "Default": "3",
+      "Section": "Petalkin"
+    },
+    "ForagePatch_MixedSeeds_MinDrops": {
+      "Default": "1",
+      "Section": "ForagePatch"
+    },
+    "ForagePatch_MixedSeeds_MaxDrops": {
+      "Default": "1",
+      "Section": "ForagePatch"
+    },
+    "ForagePatch_Common_MinForageType": {
+      "Default": "2",
+      "Section": "ForagePatch"
+    },
+    "ForagePatch_Common_MaxForageType": {
+      "Default": "2",
+      "Section": "ForagePatch"
+    },
+    "ForagePatch_Common_MinDropsPerForageType": {
+      "Default": "2",
+      "Section": "ForagePatch"
+    },
+    "ForagePatch_Common_MaxDropsPerForageType": {
+      "Default": "5",
+      "Section": "ForagePatch"
+    },
+    "ForagePatch_Uncommon_Chance": {
+      "Default": "0.75",
+      "Section": "ForagePatch"
+    },
+    "ForagePatch_Uncommon_MinForageType": {
+      "Default": "1",
+      "Section": "ForagePatch"
+    },
+    "ForagePatch_Uncommon_MaxForageType": {
+      "Default": "1",
+      "Section": "ForagePatch"
+    },
+    "ForagePatch_Uncommon_MinDropsPerForageType": {
+      "Default": "1",
+      "Section": "ForagePatch"
+    },
+    "ForagePatch_Uncommon_MaxDropsPerForageType": {
+      "Default": "2",
+      "Section": "ForagePatch"
+    },
+    "ForagePatch_Rare_Chance": {
+      "Default": "0.2",
+      "Section": "ForagePatch"
+    },
+    "ForagePatch_Rare_MinForageType": {
+      "Default": "1",
+      "Section": "ForagePatch"
+    },
+    "ForagePatch_Rare_MaxForageType": {
+      "Default": "1",
+      "Section": "ForagePatch"
+    },
+    "ForagePatch_Rare_MinDropsPerForageType": {
+      "Default": "1",
+      "Section": "ForagePatch"
+    },
+    "ForagePatch_Rare_MaxDropsPerForageType": {
+      "Default": "1",
+      "Section": "ForagePatch"
+    },
+    "ForagePatch_ForagingExperience": {
+      "Default": "12",
+      "Section": "ForagePatch"
+    },
+    "Timberbark_Enabled": {
       "AllowValues": "true, false",
       "Default": "true",
       "Section": "Timberbark"
-    }
+    },
+    "Timberbark_PurchasePrice": {
+      "Default": "2000",
+      "Section": "Timberbark"
+    },
+    "Timberbark_SellPrice": {
+      "Default": "4000",
+      "Section": "Timberbark"
+    },
+    "Timberbark_DaysToMature": {
+      "Default": "3",
+      "Section": "Timberbark"
+    },
+    "TimberbarkPile_Sap_MinDrops": {
+      "Default": "5",
+      "Section": "TimberbarkPile"
+    },
+    "TimberbarkPile_Sap_MaxDrops": {
+      "Default": "5",
+      "Section": "TimberbarkPile"
+    },
+    "TimberbarkPile_Wood_MinDrops": {
+      "Default": "12",
+      "Section": "TimberbarkPile"
+    },
+    "TimberbarkPile_Wood_MaxDrops": {
+      "Default": "16",
+      "Section": "TimberbarkPile"
+    },
+    "TimberbarkPile_Hardwood_MinDrops": {
+      "Default": "0",
+      "Section": "TimberbarkPile"
+    },
+    "TimberbarkPile_Hardwood_MaxDrops": {
+      "Default": "0",
+      "Section": "TimberbarkPile"
+    },
+    "TimberbarkPile_Moss_MinDrops": {
+      "Default": "1",
+      "Section": "TimberbarkPile"
+    },
+    "TimberbarkPile_Moss_MaxDrops": {
+      "Default": "3",
+      "Section": "TimberbarkPile"
+    },
+    "TimberbarkPile_ForagingExperience": {
+      "Default": "5",
+      "Section": "TimberbarkPile"
+    },
+    "LargeTimberbarkPile_Sap_MinDrops": {
+      "Default": "6",
+      "Section": "LargeTimberbarkPile"
+    },
+    "LargeTimberbarkPile_Sap_MaxDrops": {
+      "Default": "8",
+      "Section": "LargeTimberbarkPile"
+    },
+    "LargeTimberbarkPile_Wood_MinDrops": {
+      "Default": "18",
+      "Section": "LargeTimberbarkPile"
+    },
+    "LargeTimberbarkPile_Wood_MaxDrops": {
+      "Default": "24",
+      "Section": "LargeTimberbarkPile"
+    },
+    "LargeTimberbarkPile_Hardwood_MinDrops": {
+      "Default": "2",
+      "Section": "LargeTimberbarkPile"
+    },
+    "LargeTimberbarkPile_Hardwood_MaxDrops": {
+      "Default": "2",
+      "Section": "LargeTimberbarkPile"
+    },
+    "LargeTimberbarkPile_Moss_MinDrops": {
+      "Default": "3",
+      "Section": "LargeTimberbarkPile"
+    },
+    "LargeTimberbarkPile_Moss_MaxDrops": {
+      "Default": "5",
+      "Section": "LargeTimberbarkPile"
+    },
+    "LargeTimberbarkPile_ForagingExperience": {
+      "Default": "5",
+      "Section": "LargeTimberbarkPile"
+    },
   },
   "DynamicTokens": [
+    {
+      "Name": "CoalclawUnlockStatus",
+      "Value": "true",
+    },
+    {
+      "Name": "CoalclawUnlockStatus",
+      "Value": "false",
+      "When": {
+        "Coalclaw_Enabled": "false"
+      }
+    },
+    {
+      "Name": "HoneypuffUnlockStatus",
+      "Value": "true",
+    },
+    {
+      "Name": "HoneypuffUnlockStatus",
+      "Value": "false",
+      "When": {
+        "Coalclaw_Enabled": "false"
+      }
+    },
+    {
+      "Name": "JellomoneUnlockStatus",
+      "Value": "true",
+    },
+    {
+      "Name": "JellomoneUnlockStatus",
+      "Value": "false",
+      "When": {
+        "Jellomone_Enabled": "false"
+      }
+    },
+    {
+      "Name": "MolecatUnlockStatus",
+      "Value": "true",
+    },
+    {
+      "Name": "MolecatUnlockStatus",
+      "Value": "false",
+      "When": {
+        "Molecat_Enabled": "false"
+      }
+    },
+    {
+      "Name": "PetalkinUnlockStatus",
+      "Value": "true",
+    },
+    {
+      "Name": "PetalkinUnlockStatus",
+      "Value": "false",
+      "When": {
+        "Petalkin_Enabled": "false"
+      }
+    },
+    {
+      "Name": "TimberbarkUnlockStatus",
+      "Value": "true",
+    },
+    {
+      "Name": "TimberbarkUnlockStatus",
+      "Value": "false",
+      "When": {
+        "Timberbark_Enabled": "false"
+      }
+    },
     //Coalclaw
     {
       "Name": "CoalclawHarvestTypeToken",
@@ -85,7 +420,7 @@
       "Value": "DropOvernight",
       "When": {
         "Season": "winter",
-        "MolecatProduceOnWinter": true
+        "Molecat_ProduceOnWinter": true
       }
     },
     {
@@ -93,7 +428,7 @@
       "Value": "DropOvernight",
       "When": {
         "Weather": "Rain, Storm, GreenRain",
-        "MolecatProduceOnRainyDays": true
+        "Molecat_ProduceOnRainyDays": true
       }
     },
   ],
@@ -125,7 +460,7 @@
     {
       "LogName": "Load animals sprite",
       "Action": "Load",
-      "Target": "Mods/ItsBenter.ResourcefulFriends/Animals/Coalclaw, Mods/ItsBenter.ResourcefulFriends/Animals/BabyCoalclaw, Mods/ItsBenter.ResourcefulFriends/Animals/CoalclawCream, Mods/ItsBenter.ResourcefulFriends/Animals/BabyCoalclawCream, Mods/ItsBenter.ResourcefulFriends/Animals/Honeypuff, Mods/ItsBenter.ResourcefulFriends/Animals/BabyHoneypuff, Mods/ItsBenter.ResourcefulFriends/Animals/HoneypuffYellow, Mods/ItsBenter.ResourcefulFriends/Animals/BabyHoneypuffYellow, Mods/ItsBenter.ResourcefulFriends/Animals/HoneypuffBlue, Mods/ItsBenter.ResourcefulFriends/Animals/BabyHoneypuffBlue, Mods/ItsBenter.ResourcefulFriends/Animals/HoneypuffRed, Mods/ItsBenter.ResourcefulFriends/Animals/BabyHoneypuffRed, Mods/ItsBenter.ResourcefulFriends/Animals/Molecat, Mods/ItsBenter.ResourcefulFriends/Animals/BabyMolecat, Mods/ItsBenter.ResourcefulFriends/Animals/MolecatCookies, Mods/ItsBenter.ResourcefulFriends/Animals/BabyMolecatCookies, Mods/ItsBenter.ResourcefulFriends/Animals/MolecatGray, Mods/ItsBenter.ResourcefulFriends/Animals/BabyMolecatGray, Mods/ItsBenter.ResourcefulFriends/Animals/MolecatWhite, Mods/ItsBenter.ResourcefulFriends/Animals/BabyMolecatWhite, Mods/ItsBenter.ResourcefulFriends/Animals/MolecatBlack, Mods/ItsBenter.ResourcefulFriends/Animals/BabyMolecatBlack, Mods/ItsBenter.ResourcefulFriends/Animals/Timberbark, Mods/ItsBenter.ResourcefulFriends/Animals/BabyTimberbark",
+      "Target": "Mods/ItsBenter.ResourcefulFriends/Animals/CoalclawGray, Mods/ItsBenter.ResourcefulFriends/Animals/BabyCoalclawGray, Mods/ItsBenter.ResourcefulFriends/Animals/CoalclawCream, Mods/ItsBenter.ResourcefulFriends/Animals/BabyCoalclawCream, Mods/ItsBenter.ResourcefulFriends/Animals/HoneypuffGreen, Mods/ItsBenter.ResourcefulFriends/Animals/BabyHoneypuffGreen, Mods/ItsBenter.ResourcefulFriends/Animals/HoneypuffYellow, Mods/ItsBenter.ResourcefulFriends/Animals/BabyHoneypuffYellow, Mods/ItsBenter.ResourcefulFriends/Animals/HoneypuffBlue, Mods/ItsBenter.ResourcefulFriends/Animals/BabyHoneypuffBlue, Mods/ItsBenter.ResourcefulFriends/Animals/HoneypuffRed, Mods/ItsBenter.ResourcefulFriends/Animals/BabyHoneypuffRed, Mods/ItsBenter.ResourcefulFriends/Animals/MolecatOrange, Mods/ItsBenter.ResourcefulFriends/Animals/BabyMolecatOrange, Mods/ItsBenter.ResourcefulFriends/Animals/MolecatCookies, Mods/ItsBenter.ResourcefulFriends/Animals/BabyMolecatCookies, Mods/ItsBenter.ResourcefulFriends/Animals/MolecatGray, Mods/ItsBenter.ResourcefulFriends/Animals/BabyMolecatGray, Mods/ItsBenter.ResourcefulFriends/Animals/MolecatWhite, Mods/ItsBenter.ResourcefulFriends/Animals/BabyMolecatWhite, Mods/ItsBenter.ResourcefulFriends/Animals/MolecatBlack, Mods/ItsBenter.ResourcefulFriends/Animals/BabyMolecatBlack, Mods/ItsBenter.ResourcefulFriends/Animals/Timberbark, Mods/ItsBenter.ResourcefulFriends/Animals/BabyTimberbark",
       "FromFile": "Animals/{{TargetWithoutPath}}.png"
     },
     {
@@ -150,7 +485,14 @@
     },
     {
       "Action": "Include",
-      "FromFile": "Data/AquariumFish.json, Data/FarmAnimals.json, Data/FishPondData.json, Data/Objects.json, Data/Shops.json, Mods/ItemExtensions.json"
+      "FromFile": "Data/AquariumFish.json, Data/ContextTags.json, Data/FarmAnimals.json, Data/FishPondData.json, Data/Objects.json, Data/Shops.json, Mods/ItemExtensions.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/ContextTags_StardewValleyExpanded.json",
+      "When": {
+        "HasMod |Contains=FlashShifter.StardewValleyExpandedCP": true
+      }
     },
   ]
 }
