@@ -18,10 +18,9 @@
 
 The mod config supports:
 
-* Enable or disable specific addition.
+* Enable or disable specific animal.
 * Modify animal price.
-* Modify some animal production behavior.
-* Modify amount of produce.
+* Modify some production behavior (including amount of produce).
 
 Details of the config options is shown when hovered over in [Generic Mod Config Menu](https://www.nexusmods.com/stardewvalley/mods/5098) in-game mod options.
 
@@ -30,7 +29,7 @@ Details of the config options is shown when hovered over in [Generic Mod Config 
 In version 1.0.0, this mod have five farm animals. They mostly produce existing resources that not obtainable through existing farm animals. Effectively enabling a steady supply of the resources. Three of the farm animals are meant for Coop and two are meant for Barn.
 
 | Farm Animal | Purchase Price | Resources Produced | Building | Days to Mature |
-| :---------: | -------------: | ------------------ | -------- | -------------: |
+| :---------: | -------------- | ------------------ | -------- | -------------- |
 |![Coalclaw](Documentation/ShopTexture/Coalclaw.png)<br>[Coalclaw](Documentation/Coalclaw.md) | 550G | Coal<br>Coalclaw egg | Coop | 2 |
 |![Honeypuff](Documentation/ShopTexture/Honeypuff.png)<br>[Honeypuff](Documentation/Honeypuff.md) | 1250G | Honey | Coop | 3 |
 |![Molecat](Documentation/ShopTexture/Molecat.png)<br>[Molecat](Documentation/Molecat.md) | 1100G | Stone<br>Copper ore<br>Iron ore<br>Gold ore<br>Iridium ore | Coop | 3 |
@@ -52,7 +51,7 @@ In version 1.0.0, this mod have five farm animals. They mostly produce existing 
 ## FAQ
 
 1. Is it safe to add this mod mid-save? <br>
-It should be safe to add. If you need to remove the mod, selling the mod added objects and animals is recommended before removing the mod.
+It should be safe to add. If you need to remove the mod, selling/throwing out objects and animals added by the mod is recommended before removing the mod.
 2. Can I use this mod in multiplayer? <br>
 Yes, you can. Ideally with same mods installed and with same setting on all players.
 3. Is this mod compatible with that mod? <br>
