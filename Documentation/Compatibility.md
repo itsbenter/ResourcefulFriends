@@ -1,14 +1,19 @@
 # Compatibility
 
-Petalkin is a farm animal that lives in a Barn. It can be purchased at Marnie's Ranch for 2000G. Petalkin can become pregnant and give birth.
+This page includes compatibility patches and pointers to make compatibility for this mod.
 
 * [Petalkin](#petalkin)
-  * [Forage Grouping](#forage-grouping)
+  * [Stardew Valley Expanded](#stardew-valley-expanded)
 * [Footnote](#footnote)
 
 ## Petalkin
 
-### Forage Grouping
+In concept Petalkin appearances would chane based on the forages in the area. This means mod that adds ability to build Barn in area with distinct forages should get a compatibility patch. So far two mods has been identified.
+
+1. [Visit Mount Vapius](https://www.nexusmods.com/stardewvalley/mods/9600)
+2. [Ridgeside Village](https://www.nexusmods.com/stardewvalley/mods/7286)
+
+### Stardew Valley Expanded
 
 These are [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753) forages compatibility patch added by this mod. Petalkin's Forage Patch will produce [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753) forages along the base game forages.
 
