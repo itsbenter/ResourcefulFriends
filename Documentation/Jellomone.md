@@ -4,11 +4,13 @@
 
 ![Jellomone](Objects/Jellomone.png)
 
-Jellomone can be purchased at Willy's Shop for 1100G. It cannot be given as gift to villagers but can be used as decoration in aquarium.
+Jellomone can be purchased at Willy's Shop for 1100G. If Jellomone's 'Require Progession' config is set to true, player need to caught each different jellies (Sea Jellies, River Jellies, and Cave Jellies) for Jellomone to be available in the shop. Willy will send a letter to notify player, but the item will be can be purchased even if the letter has not been read.
+
+Jellomone cannot be given as gift to villagers but can be used as decoration in aquarium.
 
 ## Fish Pond
 
-When placed in Fish Pond Jellomone produce jellies with the quantity based on the pond population. Jellomone takes 5 days to increase its population by 1 and does not require any item for it.
+When placed in Fish Pond Jellomone produce jellies with the quantity based on the pond population. Jellomone takes 5 days to increase its population by 1 and does not require any item to reach 10 population.
 
 
 | Item(s) Produced | Population | Quantity |
