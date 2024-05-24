@@ -63,6 +63,11 @@
       "Default": "true",
       "Section": "Jellomone"
     },
+    "Jellomone_RequireProgression": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Jellomone"
+    },
     "Jellomone_Price": {
       "Default": "550",
       "Section": "Jellomone"
@@ -326,14 +331,7 @@
     },
     {
       "Name": "JellomoneUnlockStatus",
-      "Value": "true",
-    },
-    {
-      "Name": "JellomoneUnlockStatus",
-      "Value": "false",
-      "When": {
-        "Jellomone_Enabled": "false"
-      }
+      "Value": "{{Jellomone_Enabled}}, ANY \"PLAYER_HAS_CAUGHT_FISH Any (O)SeaJelly, PLAYER_HAS_CAUGHT_FISH Any (O)RiverJelly, PLAYER_HAS_CAUGHT_FISH Any (O)CaveJelly\" \"!{{Jellomone_RequireProgression}}\"",
     },
     {
       "Name": "MolecatUnlockStatus",
@@ -377,6 +375,7 @@
       "Name": "CoalclawHarvestTypeToken",
       "Value": "DropOvernight",
       "When": {
+        "HasMod |Contains:MindMeltMax.WinterPigs": false,
         "Season": "winter",
         "Coalclaw_ProduceOnWinter": true
       }
@@ -385,6 +384,7 @@
       "Name": "CoalclawHarvestTypeToken",
       "Value": "DropOvernight",
       "When": {
+        "HasMod |Contains:MindMeltMax.WinterPigs": false,
         "Weather": "Rain, Storm, GreenRain",
         "Coalclaw_ProduceOnRainyDays": true
       }
@@ -398,6 +398,7 @@
       "Name": "MolecatHarvestTypeToken",
       "Value": "DropOvernight",
       "When": {
+        "HasMod |Contains:MindMeltMax.WinterPigs": false,
         "Season": "winter",
         "Molecat_ProduceOnWinter": true
       }
@@ -406,6 +407,7 @@
       "Name": "MolecatHarvestTypeToken",
       "Value": "DropOvernight",
       "When": {
+        "HasMod |Contains:MindMeltMax.WinterPigs": false,
         "Weather": "Rain, Storm, GreenRain",
         "Molecat_ProduceOnRainyDays": true
       }
@@ -413,15 +415,9 @@
   ],
   "Changes": [
     {
-      "LogName": "Load aquarium sprites",
+      "LogName": "Load TileSheets Folder",
       "Action": "Load",
-      "Target": "Mods/ItsBenter.ResourcefulFriends/TileSheets/AquariumFish",
-      "FromFile": "TileSheets/{{TargetWithoutPath}}.png"
-    },
-    {
-      "LogName": "Load object sprites",
-      "Action": "Load",
-      "Target": "Mods/ItsBenter.ResourcefulFriends/TileSheets/Objects",
+      "Target": "Mods/ItsBenter.ResourcefulFriends/TileSheets/AquariumFish, Mods/ItsBenter.ResourcefulFriends/TileSheets/Objects",
       "FromFile": "TileSheets/{{TargetWithoutPath}}.png"
     },
     {
@@ -468,10 +464,10 @@
     },
     {
       "Action": "Include",
-      "FromFile": "Data/ContextTags_StardewValleyExpanded.json",
+      "FromFile": "Data/ContextTags_SVE.json",
       "When": {
         "HasMod |Contains=FlashShifter.StardewValleyExpandedCP": true
       }
-    },
+    }
   ]
 }
