@@ -375,7 +375,7 @@
       "Name": "CoalclawHarvestTypeToken",
       "Value": "DropOvernight",
       "When": {
-        "HasMod |Contains:MindMeltMax.WinterPigs": false,
+        "HasMod |Contains=MindMeltMax.WinterPigs": false,
         "Season": "winter",
         "Coalclaw_ProduceOnWinter": true
       }
@@ -384,7 +384,7 @@
       "Name": "CoalclawHarvestTypeToken",
       "Value": "DropOvernight",
       "When": {
-        "HasMod |Contains:MindMeltMax.WinterPigs": false,
+        "HasMod |Contains=MindMeltMax.WinterPigs": false,
         "Weather": "Rain, Storm, GreenRain",
         "Coalclaw_ProduceOnRainyDays": true
       }
@@ -398,7 +398,7 @@
       "Name": "MolecatHarvestTypeToken",
       "Value": "DropOvernight",
       "When": {
-        "HasMod |Contains:MindMeltMax.WinterPigs": false,
+        "HasMod |Contains=MindMeltMax.WinterPigs": false,
         "Season": "winter",
         "Molecat_ProduceOnWinter": true
       }
@@ -407,7 +407,7 @@
       "Name": "MolecatHarvestTypeToken",
       "Value": "DropOvernight",
       "When": {
-        "HasMod |Contains:MindMeltMax.WinterPigs": false,
+        "HasMod |Contains=MindMeltMax.WinterPigs": false,
         "Weather": "Rain, Storm, GreenRain",
         "Molecat_ProduceOnRainyDays": true
       }
