@@ -1,0 +1,14 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "ItsBenter.ResourcefulFriends.Jellomone": "{{i18n:Mail.Jellomone_Text}}[#]{{i18n:Mail.Jellomone_Name}}"
+            }
+        }
+    ]
+    //
+    //
+}
