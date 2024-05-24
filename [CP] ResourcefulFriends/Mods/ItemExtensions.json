@@ -26,7 +26,8 @@
                         "color_black",
                         "itsbenter_coalclawclump",
                         "placeable",
-                        "temisthem_bettertruffles"
+                        "temisthem_bettertruffles",
+                        "ResourcefulFriends_DisallowQuality"
                     ],
                     "ExtraItems": [
                         {
@@ -65,7 +66,8 @@
                         "color_black",
                         "itsbenter_coalclawclump",
                         "placeable",
-                        "temisthem_bettertruffles"
+                        "temisthem_bettertruffles",
+                        "ResourcefulFriends_DisallowQuality"
                     ],
                     "ExtraItems": [
                         {
@@ -168,7 +170,8 @@
                     "ContextTags": [
                         "color_brown",
                         "itsbenter_timberbarkpile",
-                        "placeable"
+                        "placeable",
+                        "ResourcefulFriends_DisallowQuality"
                     ],
                 },
                 "ItsBenter.ResourcefulFriends.LargeTimberbarkPile": {
@@ -253,7 +256,8 @@
                     "ContextTags": [
                         "color_brown",
                         "itsbenter_timberbarkpile",
-                        "placeable"
+                        "placeable",
+                        "ResourcefulFriends_DisallowQuality"
                     ],
                 },
                 //ForagePatch
@@ -407,7 +411,8 @@
                         "color_green",
                         "season_spring",
                         "itsbenter_petalkin_forage_patch",
-                        "placeable"
+                        "placeable",
+                        "ResourcefulFriends_DisallowQuality"
                     ],
                 },
                 "ItsBenter.ResourcefulFriends.SummerForagePatch": {
@@ -560,7 +565,8 @@
                         "color_green",
                         "season_summer",
                         "itsbenter_petalkin_forage_patch",
-                        "placeable"
+                        "placeable",
+                        "ResourcefulFriends_DisallowQuality"
                     ],
                 },
                 "ItsBenter.ResourcefulFriends.FallForagePatch": {
@@ -713,7 +719,8 @@
                         "color_orange",
                         "season_fall",
                         "itsbenter_petalkin_forage_patch",
-                        "placeable"
+                        "placeable",
+                        "ResourcefulFriends_DisallowQuality"
                     ],
                 },
                 "ItsBenter.ResourcefulFriends.WinterForagePatch": {
@@ -866,7 +873,8 @@
                         "color_blue",
                         "season_winter",
                         "itsbenter_petalkin_forage_patch",
-                        "placeable"
+                        "placeable",
+                        "ResourcefulFriends_DisallowQuality"
                     ],
                 },
                 "ItsBenter.ResourcefulFriends.GingerIslandForagePatch": {
@@ -1019,7 +1027,8 @@
                         "color_green",
                         "season_summer",
                         "itsbenter_petalkin_forage_patch",
-                        "placeable"
+                        "placeable",
+                        "ResourcefulFriends_DisallowQuality"
                     ],
                 },
                 //MolecatNode
@@ -1043,7 +1052,8 @@
                         "color_grey",
                         "itsbenter_molecatnode",
                         "placeable",
-                        "temisthem_bettertruffles"
+                        "temisthem_bettertruffles",
+                        "ResourcefulFriends_DisallowQuality"
                     ],
                     "ExtraItems": [
                         {
