@@ -1,8 +1,8 @@
 {
    "$schema": "https://smapi.io/schemas/manifest.json",
-   "Name": "Resourceful Friends",
+   "Name": "[CP] Resourceful Friends",
    "Author": "ItsBenter",
-   "Version": "0.0.0",
+   "Version": "1.0.0",
    "Description": "Adds five new farm animals and an object for fish pond. Expanding ways to obtain resources in-game.",
    "UniqueID": "ItsBenter.ResourcefulFriends.CP",
    "MinimumApiVersion": "4.0.0",
@@ -13,10 +13,6 @@
       "UniqueID": "Pathoschild.ContentPatcher"
    },
    "Dependencies": [
-      /*{
-         "UniqueID": "spacechase0.SpaceCore",
-         "IsRequired": false
-      },*/
       {
          "UniqueID": "mistyspring.ItemExtensions",
          "IsRequired": true
